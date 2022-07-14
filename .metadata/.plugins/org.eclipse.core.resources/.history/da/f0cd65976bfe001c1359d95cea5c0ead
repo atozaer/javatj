@@ -1,0 +1,20 @@
+package kr.or.tj;
+
+import java.util.Scanner;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자의 범위를 줄 때 &&");
+		int num = scan.nextInt();
+		String str = (num>0 && num<=10)?"10세미만":"10세이상";
+		System.out.println(str);
+		num = scan.nextInt();
+		str = (num>10 && num<=20)?"10대가아닙니다.":"10대입니다.";
+		System.out.println(str);
+	}
+
+}

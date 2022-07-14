@@ -1,0 +1,13 @@
+package ko.co.tj;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+
+		for (char a = 'A'; a == 'Z'; a++) {
+
+			System.out.printf("%d", (int)a);
+		}
+	}
+
+}

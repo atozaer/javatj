@@ -1,0 +1,27 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz1 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int num1, num2, num3, num4, num5 = 0;
+		
+		System.out.println("5개의수를입력하시오. ");
+		num1 = scan.nextInt();
+		num2 = scan.nextInt();
+		num3 = scan.nextInt();
+		num4 = scan.nextInt();
+		num5 = scan.nextInt();
+				
+		System.out.printf("%d ", num1+3);
+		System.out.printf("%d ", num2-3);
+		System.out.printf("%d ", num3*3);
+		System.out.printf("%d ", num4/3);
+		System.out.printf("%d ", num5%3);
+						
+	}
+
+}

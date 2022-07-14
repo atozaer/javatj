@@ -1,0 +1,20 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz13 {
+
+	public static void main(String[] args) {
+		int dice1=0, dice2=0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("주사위굴리기!!!!");
+		dice1=(int)(Math.random()*(6-1+1)+1);
+		dice2=(int)(Math.random()*(6-1+1)+1);
+		
+		
+		
+	}
+
+}

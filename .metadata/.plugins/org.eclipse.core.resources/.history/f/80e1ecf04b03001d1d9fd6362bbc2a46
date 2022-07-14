@@ -1,0 +1,21 @@
+package kr.co.tj2;
+
+class Academy{
+	private int studentNo;
+	private String studentName;
+	public Academy() {}//기본생성자
+	public Academy(int studentNo, String studentName) {//매개변수가있는생성자
+		this.studentNo = studentNo;
+		this.studentName = studentName;
+	}
+}
+
+
+public class AcademyTest {
+
+	public static void main(String[] args) {
+		Academy  academy = new Academy(0001,"이순신");
+		System.out.println(academy);
+	}
+
+}

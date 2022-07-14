@@ -1,0 +1,22 @@
+package kr.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+		int i=0;
+		int num;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("10이하의 정수를 입력하세요.");
+		i = scan.nextInt();
+		for(i=1; ;i++) {
+			System.out.println("자바프로그래밍");
+			if(i>10)break;
+		}
+		System.out.println("");
+	}
+
+}

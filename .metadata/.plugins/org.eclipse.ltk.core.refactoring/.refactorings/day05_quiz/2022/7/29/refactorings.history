@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Quiz06.java&apos; to &apos;day05_quiz/src/ko.co.tj&apos;&#x0D;&#x0A;- Original project: &apos;day05_quiz&apos;&#x0D;&#x0A;- Destination element: &apos;day05_quiz/src/ko.co.tj&apos;&#x0D;&#x0A;- Original element: &apos;ko.co.tj.Quiz06.java&apos;" description="Copy compilation unit" destination="/src&lt;ko.co.tj" element1="/src&lt;ko.co.tj{Quiz06.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1657595187157" units="1" version="1.0"/>
+</session>

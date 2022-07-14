@@ -1,0 +1,19 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz04 {
+
+	public static void main(String[] args) {
+		int num1 = 1;
+		double avg = 0.0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하세요.");
+		do{
+			num1 = scan.nextInt();
+			
+		}while(num1!=0);
+	}
+
+}

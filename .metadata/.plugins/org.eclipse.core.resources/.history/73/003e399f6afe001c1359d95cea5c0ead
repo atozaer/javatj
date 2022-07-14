@@ -1,0 +1,17 @@
+package kr.or.tj;
+
+import java.util.Scanner;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자의 범위를 줄 때 &&");
+		int num = scan.nextInt();
+		String str = (num>0 && num<10)?"0부터10사이의숫자":"0부터10사이의숫자가아닙니다";
+		System.out.println(str);
+	}
+
+}

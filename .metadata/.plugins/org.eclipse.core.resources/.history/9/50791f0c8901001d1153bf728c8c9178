@@ -1,0 +1,30 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz04 {
+
+	public static void main(String[] args) {
+		int count = 1;
+		int num1 = 0;
+		int sum = 0;
+		double avg = 0.0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하세요.");
+		
+		
+		do{	
+			if(num1!=0)
+			num1 = scan.nextInt();
+			num1+=sum;
+			count++;
+			
+			
+		}while(num1!=0);
+			System.out.printf("입력된자료의 개수 = %d",count-1);
+			System.out.printf("입력된자료의 합계 = %d",sum);
+			//System.out.printf("입력된자료의 평균 = %.2f",);
+	}
+
+}

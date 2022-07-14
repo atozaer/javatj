@@ -1,0 +1,23 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz03 {
+
+	public static void main(String[] args) {
+		int score = 0;
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("점수를 입력하세요.");
+		score = scan.nextInt();
+		
+		do(score<101){
+			if(score>80) {
+				System.out.println("축하합니다. %d점으로 합격입니다.", score);
+			}
+		}
+	}
+
+}

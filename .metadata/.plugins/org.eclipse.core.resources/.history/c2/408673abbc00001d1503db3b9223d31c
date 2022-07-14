@@ -1,0 +1,24 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		String select="no";
+		Scanner scan = new Scanner(System.in);
+		System.out.println("주문하세요. yes/no");
+		select=scan.next();
+		
+		switch(select) {//스위치시작
+			case "yes":
+				System.out.println("주문선택");
+				break;
+			case "no":
+				System.out.println("주문선택");
+				break;
+			
+		}//스위치끝
+	}
+
+}

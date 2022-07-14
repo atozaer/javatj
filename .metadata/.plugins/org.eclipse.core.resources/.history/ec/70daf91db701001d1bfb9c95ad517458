@@ -1,0 +1,31 @@
+package kr.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz12 {
+
+	public static void main(String[] args) {
+		int i =0;
+		int j =0;
+		int line = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자입력:");
+		line = scan.nextInt();
+		
+		for(i=1;i<=line;i++) {
+			for(;line>0;j--) {
+				if(j>i) {
+					System.out.print(" ");
+				}else	{
+					System.out.print("*");	
+				}
+			}
+			
+			System.out.println();
+			
+		}
+		
+	}
+
+}

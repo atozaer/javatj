@@ -1,0 +1,13 @@
+package kr.co.tj;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		char a = 'A';
+		
+		for(a='A';a<='Z';a++) {
+			System.out.print(a);
+		}
+	}
+
+}

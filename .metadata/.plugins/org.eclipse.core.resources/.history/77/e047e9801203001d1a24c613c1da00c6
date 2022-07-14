@@ -1,0 +1,25 @@
+package kr.co.tj;
+
+class Student{
+	public int student_ID;
+	public String studentName;
+	public String address;
+	
+	public void showStudentInfo() {
+		System.out.println(studentName+","+address);
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+}
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		Student studentLee = new Student();
+		studentLee.address = "서울시";
+		studentLee.studentName = "이순신";
+		studentLee.showStudentInfo();
+	}
+
+}

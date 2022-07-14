@@ -1,0 +1,16 @@
+package kr.co.tj1;
+
+public class FunctionTest {
+	public static int addNum(int num1, int num2) {
+		int result=0;
+		result = num1 + num2;
+		return result;
+	}
+	public static void sayHello(String greeting) {
+		System.out.println(greeting);
+	}
+	
+	public static void main(String[] args) {
+				
+	}
+}

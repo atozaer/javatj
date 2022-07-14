@@ -1,0 +1,20 @@
+package kr.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+		int i=0;
+		int num;
+		
+		Scanner scan = new Scanner(System.in);
+				
+		while(i<=5) {
+			num = scan.nextInt();
+			System.out.println("자바 프로그래밍");
+			i++;
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz16 {
+
+	public static void main(String[] args) {
+		int score = 0, result = 0;
+		char a = '수', b = '우', c = '미', d = '양', e = '가';
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("점수를 입력하세요.");
+		score = scan.nextInt();
+
+		switch (result) {
+		case 1:
+			if (score >= 90) {
+				System.out.printf("%s", a);
+			} else {
+				System.out.printf("%s", b);
+			}
+			break;
+		case 2:
+			if (score >= 80) {
+				System.out.printf("%s", b);
+			}
+			break;
+		case 3:
+			if (score >= 70) {
+				System.out.printf("%s", c);
+			}
+			break;
+		case 4:
+			if (score >= 60) {
+				System.out.printf("%s", d);
+			}
+			break;
+		case 5:
+			if (score >= 50) {
+				System.out.printf("%s", e);
+			}
+			break;
+		default:
+			System.out.println("올바른 점수를 입력해주세요.");
+			break;
+		}
+
+	}
+
+}

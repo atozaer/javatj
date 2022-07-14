@@ -1,0 +1,16 @@
+package ko.co.tj;
+
+public class BreakTest {
+
+	public static void main(String[] args) {
+		
+		int sum = 0;
+		int num;
+		
+		for(num=0;;num++) {
+			
+		}
+		System.out.println();
+	}
+
+}

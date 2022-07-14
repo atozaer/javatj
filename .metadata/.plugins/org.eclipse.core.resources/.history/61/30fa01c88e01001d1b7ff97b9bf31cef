@@ -1,0 +1,22 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz06 {
+
+	public static void main(String[] args) {
+		int num = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		do {
+			System.out.println("1.입력하기");
+			System.out.println("2.출력하기");
+			System.out.println("3.삭제하기");
+			System.out.println("4.끝내기");
+			num = scan.nextInt();
+		}while(num!=4);
+		
+	}
+
+}

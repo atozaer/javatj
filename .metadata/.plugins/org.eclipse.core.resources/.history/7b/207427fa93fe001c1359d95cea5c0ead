@@ -1,0 +1,40 @@
+package kr.or.tj;
+
+import java.util.Scanner;
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("주문하세요 yes/no");
+		String select = scan.next();
+		int menu = 0;
+
+		if (select.equals("yes") || select.equals("YES")) {//주문선택시작
+			System.out.println("주문선택");
+			System.out.println("메뉴선택 1.자장면 2.짬뽕 3.탕수육");
+			menu = scan.nextInt();
+			if (menu == 1) {
+				System.out.println("자장면선택");
+				System.out.println("곱배기선택yes/no");
+				select = scan.next();
+				if (select.equals("yes") || select.equals("YES")) {
+					System.out.println("곱배기선택");
+				} else {
+					System.out.println("보통선택");
+				}
+			} else if (menu == 2) {
+				System.out.println("짬뽕선택");
+			} else if (menu == 3) {
+				System.out.println("탕수육선택");
+			} else {
+				System.out.println("1,2,3번중에서 선택해주세요.");
+			}
+		} else {
+			System.out.println("주문취소");
+		}
+
+		scan.close();
+	}
+
+}

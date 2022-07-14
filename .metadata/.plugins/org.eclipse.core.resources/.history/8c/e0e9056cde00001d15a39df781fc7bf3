@@ -1,0 +1,24 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz16 {
+
+	public static void main(String[] args) {
+		int score;
+		String a="수",b="우",c="미",d="양",e="가";
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("점수를 입력하세요.");
+		score = scan.nextInt();
+		
+		switch(score) {
+		case score >= 90 :
+			System.out.printf("%s",a);
+		
+		}
+				
+	}
+
+}

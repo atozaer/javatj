@@ -1,0 +1,13 @@
+package ko.co.tj;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+
+		for (byte a = 65; a < 73; a++) {
+
+			System.out.printf("%b", a);
+		}
+	}
+
+}

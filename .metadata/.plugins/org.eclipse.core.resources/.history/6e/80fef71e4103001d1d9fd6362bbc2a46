@@ -1,0 +1,23 @@
+package kr.co.tj2;
+
+class UserInfor{
+	int userHeight;
+	double userWeight;
+	String userName;
+	int userAge;
+}
+
+class OrderInfor{
+	int orderNumber;
+	int orderPhoneNumber;
+	String order
+}
+
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

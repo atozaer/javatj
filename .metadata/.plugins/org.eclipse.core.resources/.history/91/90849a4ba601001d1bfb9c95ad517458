@@ -1,0 +1,14 @@
+package kr.co.tj;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+		int i=1;
+		
+		while(i<=5) {
+			System.out.println("자바 프로그래밍");
+			i++;
+		}
+	}
+
+}

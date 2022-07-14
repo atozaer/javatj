@@ -1,0 +1,10 @@
+package kr.or.tj;
+
+public class IfElseIfElseTest {
+
+	public static void main(String[] args) {
+		
+		int age = 0;
+	}
+
+}

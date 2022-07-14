@@ -1,0 +1,29 @@
+package kr.co.tj2;
+
+class UserInfo1{
+	String userId;
+	String userPassword;
+	String userName;
+	String userAddress;
+	String phoneNumber;
+	
+	public UserInfo1() {//오버로드(개발관점)
+		
+	}
+	public UserInfo1(String userId, String userPassword, String userName) {
+		this.userId = userId;
+		this.userPassword = userPassword;
+		this.userName = userName;
+	}
+	public UserInfo1(String userId,String userPassword, String userName, String userAddress) {
+		
+	}
+}
+
+public class UserInfoTest {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

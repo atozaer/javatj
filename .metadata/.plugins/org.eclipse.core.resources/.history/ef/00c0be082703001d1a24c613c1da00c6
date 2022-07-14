@@ -1,0 +1,10 @@
+package kr.co.tj2;
+
+public class UserInfoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

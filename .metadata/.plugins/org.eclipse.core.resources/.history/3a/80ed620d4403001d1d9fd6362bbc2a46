@@ -1,0 +1,52 @@
+package kr.co.tj2;
+
+import java.util.Scanner;
+
+class PersonInfo{
+	int personHeight;
+	double personWeight;
+	String personName;
+	int personAge;
+	
+	Scanner scan = new Scanner(System.in);
+	
+	public PersonInfo(int personHeight, double personWeight, String personName, int personAge) {
+		this.personHeight = personHeight;
+		this.personWeight = personWeight;
+		this.personName = personName;
+		this.personAge = personAge;
+	}
+	public String showPersonInfo() {
+		return "키 : "+personHeight+"\n"+"몸무게 : "+personWeight+"\n"+"키 : "+personName+"\n"+"키 : "+personAge+"\n";
+	}
+	public setPersonHeight() {
+		System.out.println("키 입력:");
+		this.personHeight = scan.nextInt();
+		return = personHeight;
+	}
+	public void setPersonWeight() {
+		System.out.println("키 입력:");
+		this.personWeight = scan.nextDouble();
+	}
+	public String setPersonName() {
+		System.out.println("키 입력:");
+		this.personName = scan.next();
+	}
+	public void setPersonHeight() {
+		System.out.println("키 입력:");
+		this.personHeight = scan.nextInt();
+	}
+	
+}
+
+	
+
+
+
+public class Person {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package kr.co.tj;
+
+import java.util.Scanner;
+
+public class Quiz05 {
+
+	public static void main(String[] args) {
+		int num = 0;
+		int count=0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("정수를 입력하시오.");
+		
+		do{
+			num = scan.nextInt();
+			if(num%2==0) {
+				count++;
+			}else {
+				continue;
+			}
+			
+		}while(count==10);
+	System.out.printf("입력받은짝수는 %d개 입니다.",count);
+	
+	}
+	
+}

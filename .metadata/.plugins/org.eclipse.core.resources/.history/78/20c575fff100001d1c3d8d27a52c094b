@@ -1,0 +1,20 @@
+package ko.co.tj;
+
+import java.util.Scanner;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while(true) {
+			System.out.println("주문하세요 yes/no");
+			String select = scan.next();
+			if(select.equals("yes")||select.equals("yes")) {
+				System.out.println("주문선택");
+			}else {
+				System.out.println("주문취소");
+			}
+		}
+	}
+
+}
