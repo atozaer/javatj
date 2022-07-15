@@ -1,0 +1,23 @@
+package kr.co.tj;
+
+class Employee{
+	public static int serialNum;
+	static {
+		serialNum=100;
+	}
+	private int employeeId;
+	private String employeeName;
+	private String department;
+	
+	
+		
+	}
+}
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+
+	}
+
+}

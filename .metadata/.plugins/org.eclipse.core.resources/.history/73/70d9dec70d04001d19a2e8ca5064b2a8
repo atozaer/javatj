@@ -1,0 +1,16 @@
+package kr.co.tj;
+
+class Student{
+	int studentName;
+	int grade;
+	int money;
+	
+}
+
+public class TakeTransTest2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
