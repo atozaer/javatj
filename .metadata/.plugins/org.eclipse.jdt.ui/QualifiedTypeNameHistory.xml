@@ -10,4 +10,10 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.tj2.PersonInfo"/>
     <fullyQualifiedTypeName name="kr.co.tj2.Academy"/>
+    <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
+    <fullyQualifiedTypeName name="kr.co.tj.BirthDay"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="kr.co.tj.MakeReport"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Student"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Employee"/>
 </qualifiedTypeNameHistroy>
