@@ -3,11 +3,9 @@
     <fullyQualifiedTypeName name="java.math.BigInteger"/>
     <fullyQualifiedTypeName name="javax.sound.sampled.AudioFormat.Encoding"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="javax.annotation.processing.SupportedAnnotationTypes"/>
     <fullyQualifiedTypeName name="kr.co.tj2.Student"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.tj2.PersonInfo"/>
     <fullyQualifiedTypeName name="kr.co.tj2.Academy"/>
     <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
@@ -15,5 +13,15 @@
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="kr.co.tj.MakeReport"/>
     <fullyQualifiedTypeName name="kr.co.tj.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="kr.co.tj2.DeskLamp"/>
+    <fullyQualifiedTypeName name="kr.co.tj2.BankAccount"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Time"/>
     <fullyQualifiedTypeName name="kr.co.tj.Employee"/>
+    <fullyQualifiedTypeName name="kr.co.tj3.Employee"/>
+    <fullyQualifiedTypeName name="kr.co.tj3.Company"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="kr.co.tj3.CarFactory"/>
 </qualifiedTypeNameHistroy>
