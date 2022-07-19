@@ -1,4 +1,4 @@
-package kr.co.tj3;
+package kr.co.tj;
 
 public class ArrayTset1 {
 

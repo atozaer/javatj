@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="kr.co.tj.MakeReport"/>
     <fullyQualifiedTypeName name="kr.co.tj.Student"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.tj2.DeskLamp"/>
     <fullyQualifiedTypeName name="kr.co.tj2.BankAccount"/>
     <fullyQualifiedTypeName name="kr.co.tj.Time"/>
@@ -24,4 +23,12 @@
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="kr.co.tj3.CarFactory"/>
+    <fullyQualifiedTypeName name="kr.co.tj.AlarmClock"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="kr.co.tj.ArrayListTest01"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
