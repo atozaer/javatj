@@ -1,4 +1,4 @@
-package kr.co.tj1;
+package kr.co.tj;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,6 +19,8 @@ public class BoardExpect {
 		String deleteTitle = null;
 		String updateTitle = null;
 		String updateYN = null;
+		String titleUpdate;
+		String contentUpdate;
 		ArrayList<HashMap<String, String>> boardList = new ArrayList<HashMap<String, String>>();
 
 		while (true) {// 반복문시작
@@ -101,6 +103,7 @@ public class BoardExpect {
 				}
 			} // 삭제 끝
 			else if (protocol.equals("u") || protocol.equals("U")) {// 수정 시작
+				boolean result = false;
 				HashMap<String, String> boardHash = null;
 				System.out.println("수정할 게시글 제목을 입력 : ");
 				updateTitle = scan.next();
@@ -110,7 +113,7 @@ public class BoardExpect {
 					boardHash = boardList.get(i);
 					if (boardHash.get("title").equals(updateTitle)) {
 						System.out.println("수정되기전내용입니다.");
-						System.out.print("제목\t내용\n");
+						System.out.print("제목\t내용\t작성자\t날짜\t\t조회수\n");
 						System.out.print(boardHash.get("title") + "\t");
 						System.out.print(boardHash.get("content") + "\t");
 						System.out.print(boardHash.get("author") + "\t");
@@ -119,9 +122,23 @@ public class BoardExpect {
 						System.out.println("수정하시겠습니까? yes/no");
 						updateYN = scan.next();
 						if (updateYN.equals("yes") || updateYN.equals("YES")) {
+							System.out.println("수정할 제목|내용을 입력 : ");
+							titleContent = scan.next();
+							indexI = titleContent.indexOf("|");
+							title = titleContent.substring(0, indexI);
+							content = titleContent.substring(indexI + 1);
+							boardHash.put("title", title);
+							boardHash.put("content", content);
+							boardList.set(i, boardHash);
 
+							result = true;
 						}
 
+						if (result == true) {
+							System.out.println("게시물이수정되었습니다.");
+						} else {
+							System.out.println("수정할게시물이없습니다.");
+						}
 					}
 
 				}

@@ -28,7 +28,21 @@
     <fullyQualifiedTypeName name="kr.co.tj.ArrayListTest01"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="kr.co.tj2.BoardFuntion"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.Register"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialArray"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.Search"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.Delete"/>
+    <fullyQualifiedTypeName name="kr.co.tj3.VipCustomer"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.Vehicle"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.Customer"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.SportsCar"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.ManGongupSchool"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.WomanSchool"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.WomanGongupSchool"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.School"/>
+    <fullyQualifiedTypeName name="kr.co.tj4.VipCustomer"/>
 </qualifiedTypeNameHistroy>
