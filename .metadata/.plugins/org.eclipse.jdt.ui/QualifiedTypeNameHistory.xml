@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="kr.co.tj2.DeskLamp"/>
     <fullyQualifiedTypeName name="kr.co.tj2.BankAccount"/>
     <fullyQualifiedTypeName name="kr.co.tj.Time"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Employee"/>
     <fullyQualifiedTypeName name="kr.co.tj3.Employee"/>
     <fullyQualifiedTypeName name="kr.co.tj3.Company"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
@@ -30,7 +29,6 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.tj2.BoardFuntion"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="kr.co.tj4.Register"/>
     <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialArray"/>
@@ -45,4 +43,15 @@
     <fullyQualifiedTypeName name="kr.co.tj4.WomanGongupSchool"/>
     <fullyQualifiedTypeName name="kr.co.tj4.School"/>
     <fullyQualifiedTypeName name="kr.co.tj4.VipCustomer"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Employee"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Parent"/>
+    <fullyQualifiedTypeName name="java.lang.Record"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Rectangle"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="kr.co.tj.School"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Animal"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Customer"/>
+    <fullyQualifiedTypeName name="kr.co.tj.VIPCustomer"/>
 </qualifiedTypeNameHistroy>
