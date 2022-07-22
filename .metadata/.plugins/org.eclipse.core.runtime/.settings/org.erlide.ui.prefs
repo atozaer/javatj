@@ -14,9 +14,11 @@
 //editor/colors/integerstyle=0
 //editor/colors/keywordcolor=236,105,30
 //editor/colors/keywordstyle=0
+//editor/colors/macrocolor=239,192,144
+//editor/colors/macrostyle=0
 //editor/colors/stringcolor=71,116,136
 //editor/colors/stringstyle=0
 //editor/colors/variablecolor=60,117,141
 //editor/colors/variablestyle=0
 eclipse.preferences.version=1
-overriddenByCSS=,editor/colors/integercolor,editor/colors/floatcolor,editor/colors/keywordcolor,editor/colors/stringcolor,editor/colors/atomcolor,editor/colors/commentstyle,editor/colors/arrowstyle,editor/colors/arrowcolor,editor/colors/defaultcolor,editor/colors/keywordstyle,editor/colors/floatstyle,editor/colors/charcolor,editor/colors/stringstyle,editor/colors/integerstyle,editor/colors/charstyle,editor/colors/variablecolor,editor/colors/variablestyle,editor/colors/commentcolor,editor/colors/defaultstyle,editor/colors/atomstyle,
+overriddenByCSS=,editor/colors/integercolor,editor/colors/floatcolor,editor/colors/keywordcolor,editor/colors/stringcolor,editor/colors/atomcolor,editor/colors/commentstyle,editor/colors/arrowstyle,editor/colors/arrowcolor,editor/colors/defaultcolor,editor/colors/keywordstyle,editor/colors/floatstyle,editor/colors/charcolor,editor/colors/stringstyle,editor/colors/integerstyle,editor/colors/charstyle,editor/colors/variablecolor,editor/colors/variablestyle,editor/colors/commentcolor,editor/colors/defaultstyle,editor/colors/atomstyle,editor/colors/macrostyle,editor/colors/macrocolor,

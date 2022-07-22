@@ -4,35 +4,62 @@ import java.util.ArrayList;
 
 class Customer {
 	protected int customerID;
-	protected int customerName;
+	protected String customerName;
 	protected String customerGrade;
 	int bonusPoint;
-	int price;
 	double bonusRatio;
 	double saleRatio;
-
+	int price;
 	public Customer() {
 
 	}
 
-	public Customer(int customerID, int customerName) {
-		super();
+	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
+
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
 	}
+
 	public int calcPrice(int price) {
-		bonusPoint += price+bonusRatio;
-		return price-(int)(price*saleRatio);
+		bonusPoint += price + bonusRatio;
+		return price - (int) (price * saleRatio);
 	}
+
+	public int getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
+	}
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	public String getCustomerGrade() {
+		return customerGrade;
+	}
+
+	public void setCustomerGrade(String customerGrade) {
+		this.customerGrade = customerGrade;
+	}
+
 	public String showCustomerInfo() {
-		return customerName + "님의 등급은 " + customerGrade + 
-				"이며, 보너스 포인트는 " + bonusPoint +"지불금액은"+price+"입니다";
+		return customerName + "님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "지불금액은" + price + "입니다";
 	}
+}
 
 class VIPCustomer extends Customer {
 	private int agentID;
-	
-	public VIPCustomer(int customerID, int customerName, int agentID) {
+
+	public VIPCustomer(int customerID, String customerName, int agentID) {
 		super(customerID, customerName);
 
 		customerGrade = "VIP";
@@ -42,24 +69,33 @@ class VIPCustomer extends Customer {
 	}
 
 	@Override
-	public String calcPrice(int price) {
-		return super.calcPrice(price)+"담당 상담원 번호는 "+ agentID + "입니다";
+	public int calcPrice(int price) {
+		return super.calcPrice(price);
 	}
 
+	@Override
+	public String showCustomerInfo() {
+		// TODO Auto-generated method stub
+		return super.showCustomerInfo() + " 담당 상담원의 번호는 " + agentID + "입니다.";
+	}
 
 }
 
 class GoldCustomer extends Customer {
 	double saleRatio;
 
-	public GoldCustomer(int customerID, int customerName) {
+	public GoldCustomer(int customerID, String customerName) {
 		super(customerID, customerName);
 
 		customerGrade = "GOLD";
 		bonusRatio = 0.02;
 		saleRatio = 0.1;
 	}
-	
+
+	@Override
+	public int calcPrice(int price) {
+		return super.calcPrice(price);
+	}
 
 }
 

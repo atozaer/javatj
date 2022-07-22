@@ -46,12 +46,17 @@
     <fullyQualifiedTypeName name="kr.co.tj.Employee"/>
     <fullyQualifiedTypeName name="kr.co.tj.Parent"/>
     <fullyQualifiedTypeName name="java.lang.Record"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Rectangle"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="kr.co.tj.School"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Animal"/>
     <fullyQualifiedTypeName name="kr.co.tj.Customer"/>
     <fullyQualifiedTypeName name="kr.co.tj.VIPCustomer"/>
+    <fullyQualifiedTypeName name="kr.co.tj.VarClass"/>
+    <fullyQualifiedTypeName name="kr.co.tj.MethodSuper"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Animal"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Shape"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Rectangle"/>
+    <fullyQualifiedTypeName name="kr.co.tj.Computer"/>
+    <fullyQualifiedTypeName name="kr.co.tj1.Drink"/>
 </qualifiedTypeNameHistroy>
