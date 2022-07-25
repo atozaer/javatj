@@ -4,7 +4,10 @@ class Juice extends Drink {
 
 	public Juice(String name, int cnt, int price) {
 		super(name, cnt, price);
-		// TODO Auto-generated constructor stub
 	}
-
+	
+	@Override
+	public String toString() {
+		return getName() + " 수량:" + getCnt() + " 가격:" + getPrice() + "원";
+	}
 }

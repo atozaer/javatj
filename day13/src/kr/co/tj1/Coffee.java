@@ -6,5 +6,9 @@ public class Coffee extends Drink{
 		super(name, cnt, price);
 	}
 	
+	@Override
+	public String toString() {
+		return getName() + " 수량:" + getCnt() + " 가격:" + getPrice() + "원";
+	}
 	
 }

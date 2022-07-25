@@ -11,6 +11,8 @@ public class Drink {
 		this.name = name;
 		this.cnt = cnt;
 		this.price = price;
+		this.pk = pkNum;
+		pkNum++;
 	}
 
 	public String getName() {
@@ -52,5 +54,5 @@ public class Drink {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
+		
 }

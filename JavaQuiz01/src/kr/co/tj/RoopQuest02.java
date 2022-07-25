@@ -13,6 +13,15 @@ package kr.co.tj;
 public class RoopQuest02 {
 
 	public static void main(String[] args) {
+		int num;
+		for(int i = 0; i<=100; i++) {
+			num=0;
+			for(int j=0; j<i;j++) {
+				if(i%j==0) {
+					num+=1;
+				}
+			}
+		}
 		
 	}
 

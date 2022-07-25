@@ -16,15 +16,17 @@ public class Admin {
 	}
 
 	public boolean checkPW(int pw) {
+		boolean result = false;
 		if (this.pw == pw) {
-			return true;
+			result = true;
 		} else {
-			return false;
+			result = false;
 		}
+		return result;
 	}
 
 	public void plusCnt(Drink drink, int cnt) {
-
+		drink.setCnt(drink.getCnt()+cnt);
 	}
 
 }
