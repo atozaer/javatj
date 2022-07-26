@@ -32,7 +32,7 @@ public class RoopQuest03 {
 			}
 		}
 		
-		System.out.println(a+","+b+"의 최대공약수"+gdc);
+		System.out.println(a+","+b+"의 최대공약수는 "+gdc);
 		
 		
 	}
