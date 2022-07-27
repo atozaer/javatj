@@ -69,7 +69,7 @@ public class ArrayQuest01 {
 		// 크기가 26개인 char배열 alpha를 만들어 a~z까지의 값을 넣고 출력하세요
 		char[] alpha = new char[26];
 		for(int i = 0; i<alpha.length; i++) {
-			alpha[i] = (char)(97+i);
+			alpha[i] = (char)((int)'a'+i);
 		}
 		for(int i = 0; i<alpha.length; i++) {
 			System.out.print(alpha[i]+" ");
@@ -91,8 +91,7 @@ public class ArrayQuest01 {
 		
 		// copyAlpha를 이용하여 알파벳을 대문자로 출력하세요
 		for(int i = 0; i<copyAlpha.length; i++) {
-			System.out.println();
-			
+			System.out.print(copyAlpha[i]=(char)((int)i+65));
 		}
 		
 		
