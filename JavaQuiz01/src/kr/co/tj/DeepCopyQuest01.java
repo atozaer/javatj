@@ -37,7 +37,7 @@ public class DeepCopyQuest01 {
 		arr[4] = "인연";
 		
 		String[] arr2 = new String[10];
-		System.arraycopy(arr, 0, arr2, 0, arr.length);		
+			
 		
 		System.out.println(arr2[0]);
 

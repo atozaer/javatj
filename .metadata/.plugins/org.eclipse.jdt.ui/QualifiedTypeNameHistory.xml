@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kr.co.tj.Employee"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Parent"/>
-    <fullyQualifiedTypeName name="java.lang.Record"/>
-    <fullyQualifiedTypeName name="kr.co.tj.School"/>
-    <fullyQualifiedTypeName name="kr.co.tj.VIPCustomer"/>
-    <fullyQualifiedTypeName name="kr.co.tj.VarClass"/>
-    <fullyQualifiedTypeName name="kr.co.tj.MethodSuper"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Animal"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Computer"/>
-    <fullyQualifiedTypeName name="kr.co.tj1.Drink"/>
     <fullyQualifiedTypeName name="kr.co.tj.Television"/>
     <fullyQualifiedTypeName name="kr.co.tj.Refrigerator"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -25,7 +15,6 @@
     <fullyQualifiedTypeName name="kr.co.tj.Customer"/>
     <fullyQualifiedTypeName name="kr.co.tj.MyInterface"/>
     <fullyQualifiedTypeName name="kr.co.tj.MyClass"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="kr.co.tj.PlayerLevel"/>
     <fullyQualifiedTypeName name="kr.co.tj1.PlayerLevel"/>
     <fullyQualifiedTypeName name="kr.co.tj2.Scheduler"/>
@@ -53,11 +42,22 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="kr.co.tj.ArgsException"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
     <fullyQualifiedTypeName name="kr.co.tj.ArrayQuest01"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.sql.Time"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxResultset.ContentType_DATETIME"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
 </qualifiedTypeNameHistroy>

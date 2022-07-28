@@ -46,3 +46,16 @@ insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7900, 'JAM
 insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7934, 'MILLER', 'CLERK', 7782, to_date('2003-1-23','yyyy-mm-dd'), 1300, null, 10);
 
 SELECT EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO from EMP
+
+CREATE TABLE board(
+	no int primary key,
+    title varchar(100),
+    content varchar(500),
+    author varchar(100),
+    nal date default sysdate,
+    readcount int
+);
+
+insert into board(no,title,content,author,readcount) values(1, '제목1', '내용1', 'tj01', 0);
+select NO,TITLE,CONTENT,AUTHOR,NAL,READCOUNT FROM BOARD;
+

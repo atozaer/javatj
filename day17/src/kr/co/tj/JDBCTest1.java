@@ -3,18 +3,36 @@ package kr.co.tj;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
 
 public class JDBCTest1 {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("번호입력");
+		int no = scan.nextInt();
+		System.out.println("주소입력");
+		String addr = scan.next();
+		
+		Statement stmt = null;
+		String sql = null;
+		Connection conn = null;
+		final String driverName = "oracle.jdbc.driver.OracleDriver";
+		final String url = "jdbc:oracle:thin:@127.0.0.1:1521:XE";
+		final String user = "tj01";
+		final String passwd = "dkdlxl";
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "tj01", "dkdlxl");
+			Class.forName(driverName);
+			conn = DriverManager.getConnection(url, user, passwd);
 			if (conn == null) {
 				System.out.println("오라클연결안됨");
 			} else {
 				System.out.println("오라클연결성공");
-				
+				stmt = conn.createStatement();
+				sql = "insert into jo(no,addr) values(" + no + ",'" + addr + "')"; // 번호 주소 입력
+				stmt.executeUpdate(sql);
+				System.out.println("로그데이터작성완료");
 			}
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block

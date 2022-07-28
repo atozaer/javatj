@@ -7,6 +7,8 @@ import java.sql.SQLException;
 public class JDBCTest2 {
 
 	public static void main(String[] args) {
+		
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/tj?characterEncoding=utf8", "root", "1234");

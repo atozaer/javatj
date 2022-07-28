@@ -82,7 +82,7 @@ public class ArrayQuest01 {
 		
 		// 깊은 복사 활용 : 깊은 복사 지원 함수 외 반복문을 활용해 깊은 복사
 		for(int i = 0; i<alpha.length; i++) {
-			copyAlpha[i] = alpha[i];
+			copyAlpha[i] = (char)(alpha[i] - 32);
 		}
 		for(int i = 0; i<copyAlpha.length; i++) {
 			System.out.print(copyAlpha[i]+" ");
@@ -91,10 +91,19 @@ public class ArrayQuest01 {
 		
 		// copyAlpha를 이용하여 알파벳을 대문자로 출력하세요
 		for(int i = 0; i<copyAlpha.length; i++) {
-			System.out.print(copyAlpha[i]=(char)((int)i+65));
+			//copyAlpha[i]=(char)((int)i+32);
+			System.out.print(copyAlpha[i]);
 		}
 		
-		
+//		
+//		for(int i = 0; i<copyAlpha.length; i++) {
+//			System.out.print(copyAlpha[i]+" ");
+//		}
+//		System.out.println("\n-----------------------");
+//		for(int i = 0; i<alpha.length; i++) {
+//			System.out.print(alpha[i]+" ");
+//		}
+//		
 	}
 
 }
