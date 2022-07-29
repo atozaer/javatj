@@ -14,11 +14,39 @@
 
 package kr.co.tj;
 
+import java.util.Scanner;
+
 public class LottoTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
 
+		String protocol, protocol1;
+		int[] lotto = new int[6];
+
+		System.out.println("로또 번호를 계산 받으시겠습니까?(y/n)");
+		protocol1 = scan.next();
+		protocol = protocol1.toUpperCase();
+		if(protocol.equals("Y")) {
+			for (int i = 0; i < 6; i++) {
+				lotto[i] = (int) (Math.random() * 45) + 1;
+
+				for (int j = 0; j < i; j++) {
+					if (lotto[i] == lotto[j]) {
+						i--;
+						break;
+					}
+				}
+			}
+			System.out.print("[ ");
+			for (int i = 0; i<lotto.length; i++) {
+				System.out.print(lotto[i]+" ");
+			}
+			System.out.println("]");
+		}else {
+			System.out.println("프로그램 종료");
+		}
+		
 	}
 
 }

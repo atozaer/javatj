@@ -1,0 +1,6 @@
+CREATE TABLE st1(
+datetime date default sysdate
+)
+
+INSERT INTO ST1(datetime) values(sysdate)
+SELECT datetime from ST1

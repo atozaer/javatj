@@ -1,35 +1,33 @@
 CREATE TABLE student(
-	no int,
-	addr VARCHAR(500)
+   no int,
+   addr VARCHAR(500)
 )
-INSERT INTO STUDENT(NO,ADDR) values (1,'YONG')
-
+INSERT INTO STUDENT(NO,ADDR) values (1,'YOON')
 SELECT NO,ADDR from STUDENT
-
 
 CREATE TABLE dept(
 	deptno int primary key,
 	dname VARCHAR(100),
 	loc VARCHAR(100)
 )
-INSERT INTO DEPT(DEPTNO, DNAME, LOC) values(10,'ACCOUNTING', 'NEWYORK')
-INSERT INTO DEPT(DEPTNO, DNAME, LOC) values(20,'RESEARCH', 'DALLAS')
-INSERT INTO DEPT(DEPTNO, DNAME, LOC) values(30,'SALES', 'CHICAGO')
-INSERT INTO DEPT(DEPTNO, DNAME, LOC) values(40,'OPERATIONS', 'BOSTON')
-
-SELECT DEPTNO,DNAME,LOC from DEPT
-
+INSERT INTO DEPT(DEPTNO,DNAME,LOC) VALUES(10,'ACCOUNTING','NEW YORK')
+INSERT INTO DEPT(DEPTNO,DNAME,LOC) VALUES(20,'RESEARCH','DALLAS')
+INSERT INTO DEPT(DEPTNO,DNAME,LOC) VALUES(30,'SALES','CHICAGO')
+INSERT INTO DEPT(DEPTNO,DNAME,LOC) VALUES(40,'OPERATIONS','BOSTON')
+SELECT DEPTNO,DNAME,LOC FROM DEPT
 
 CREATE TABLE emp(
 	empno int primary key,
 	ename VARCHAR(100),
-	job	VARCHAR(100),
-	mgr VARCHAR(4),
-	hiredate date,
-	sal int,
-	comm int,
-	deptno int
+	job   VARCHAR(100),
+	mgr   VARCHAR(4),
+	hiredate DATE,
+	sal    int,
+	comm   int,
+	deptno int	
 )
+SELECT EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO FROM EMP
+
 insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7839, 'KING', 'PRESIDENT', null, to_date('1996-11-17','yyyy-mm-dd'), 5000, null, 10);
 insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7698, 'BLAKE', 'MANAGER', 7839, to_date('1991-1-05','yyyy-mm-dd'), 2850, null, 30);
 insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7782, 'CLARK', 'MANAGER', 7839, to_date('1999-9-06','yyyy-mm-dd'), 2450, null, 10);
@@ -45,31 +43,17 @@ insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7876, 'ADA
 insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7900, 'JAMES', 'CLERK', 7698, to_date('3-12-1981','mm-dd-yyyy'), 950, null, 30);
 insert into emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values( 7934, 'MILLER', 'CLERK', 7782, to_date('2003-1-23','yyyy-mm-dd'), 1300, null, 10);
 
-SELECT EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO from EMP
-
 CREATE TABLE board(
 	no int primary key,
-    title varchar(100),
-    content varchar(500),
-    author varchar(100),
-    nal date default sysdate,
-    readcount int
-);
+	title varchar(100),
+	content varchar(500),
+	author varchar(100),
+	nal date default sysdate,
+	readcount int
+)
 
-insert into board(no,title,content,author,readcount) values(1, '제목1', '내용1', 'tj01', 0);
-select NO,TITLE,CONTENT,AUTHOR,NAL,READCOUNT FROM BOARD;
+INSERT INTO board(no,title,content,author,readcount) values(1,'제목1','내용1','tj',0)
+INSERT INTO board(no,title,content,author,nal,readcount) values(2,'제목1','내용1','tj',sysdate,0)
+SELECT NO,TITLE,CONTENT,AUTHOR,NAL,READCOUNT FROM BOARD
 
-CREATE TABLE member(
-id varchar(20) primary key,
-passwd varchar(20),
-address varchar(100),
-tel varchar(30)
-);
-
-insert into member(id,passwd,address,tel) values('아이디1','비밀번호1','주소1','전화번호1');
-
-select ID,PASSWD,ADDRESS,TEL FROM MEMBER;
-
-
-
-
+DROP TABLE board

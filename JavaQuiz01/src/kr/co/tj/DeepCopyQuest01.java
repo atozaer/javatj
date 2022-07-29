@@ -35,12 +35,15 @@ public class DeepCopyQuest01 {
 		arr[2] = "연금술사";
 		arr[3] = "2021 트랜드 코리아";
 		arr[4] = "인연";
-		
-		String[] arr2 = new String[10];
-			
-		
-		System.out.println(arr2[0]);
 
+		String[] arr2 = new String[10];
+
+		for (int i = 5; i < arr2.length; i++) {
+			arr2[i]=arr[i-5];
+			System.out.println(arr2[i]);
+		}
+		
+		
 	}
 
 }
