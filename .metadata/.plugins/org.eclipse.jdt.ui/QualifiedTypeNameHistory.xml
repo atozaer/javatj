@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kr.co.tj1.Rectangle"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Shape"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Calculator"/>
-    <fullyQualifiedTypeName name="kr.co.tj.CompleteCalc"/>
-    <fullyQualifiedTypeName name="kr.co.tj.Customer"/>
-    <fullyQualifiedTypeName name="kr.co.tj.MyInterface"/>
-    <fullyQualifiedTypeName name="kr.co.tj.MyClass"/>
     <fullyQualifiedTypeName name="kr.co.tj.PlayerLevel"/>
     <fullyQualifiedTypeName name="kr.co.tj1.PlayerLevel"/>
     <fullyQualifiedTypeName name="kr.co.tj2.Scheduler"/>
@@ -47,17 +40,24 @@
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxDatatypes.Array"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="kr.co.tj.model.ProductDAO"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.jdbc.result.ResultSetInternalMethods"/>
+    <fullyQualifiedTypeName name="kr.co.tj.model.JDBCUtil"/>
+    <fullyQualifiedTypeName name="kr.co.tj.model.ProductVO"/>
+    <fullyQualifiedTypeName name="kr.co.tj.controller.ProductController"/>
+    <fullyQualifiedTypeName name="javax.lang.model.util.SimpleAnnotationValueVisitor14"/>
+    <fullyQualifiedTypeName name="java.text.Format"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

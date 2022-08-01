@@ -13,16 +13,31 @@
 
 package kr.co.tj;
 
-class Lotto{
+import java.util.Scanner;
+
+import javax.lang.model.util.SimpleAnnotationValueVisitor14;
+
+class Lotto {
 	int[] lottoNumbers = new int[6];
-	
-	public void LottoMain(String yorn) {
-		if(yorn.equals("y")||yorn.equals("Y")) {
-			LottoRun();
+
+	public void LottoMain() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("로또번호를 받으시겠습니까??? y/n");
+		String yorn = scan.next();
+		int count = 0;
+		while (count == 0) {
+			if (yorn.equals("y") || yorn.equals("Y")) {
+				lottoRun();
+				lottoShow();
+				count++;
+			} else {
+				System.out.println("프로그램 종료");
+				break;
+			}
 		}
 	}
-	
-	public void LottoRun() {
+
+	public void lottoRun() {
 		for (int i = 0; i < 6; i++) {
 			lottoNumbers[i] = (int) (Math.random() * 45) + 1;
 
@@ -33,19 +48,27 @@ class Lotto{
 				}
 			}
 		}
+
+	}
+	
+	public void lottoShow() {
 		System.out.print("[ ");
-		for (int i = 0; i<lottoNumbers.length; i++) {
-			System.out.print(lottoNumbers[i]+" ");
+		for (int i = 0; i < lottoNumbers.length; i++) {
+			System.out.print(lottoNumbers[i] + " ");
 		}
 		System.out.println("]");
 	}
-	
+
 }
 
 public class LottoTest2 {
 
 	public static void main(String[] args) {
-		
+		Scanner scan = new Scanner(System.in);
+
+		Lotto lotto = new Lotto();
+		lotto.LottoMain();
+
 	}
 
 }
