@@ -14,27 +14,80 @@
 
 package kr.co.tj3;
 
+import java.util.Scanner;
+
 public class StudentTest {
 
 	public static void main(String[] args) {
-		Student s1 = new Student("홍길동",18);
-		Student s2 = new Student("홍길순",35);
-		Student s3 = new Student("디렉터",22);
-		Student s4 = new Student("나옹이",15);
-		Student s5 = new Student("피카츄",27);
+		Student[] students = new Student[5];
 		
-		s1.score = new Score(70,80,75);
-		s2.score = new Score(60,70,80);
-		s3.score = new Score(65,70,77);
-		s4.score = new Score(100,70,90);
-		s5.score = new Score(70,100,80);
 		
-		s1.showStudentInfo();
-		s2.showStudentInfo();
-		s3.showStudentInfo();
-		s4.showStudentInfo();
-		s5.showStudentInfo();
+		for (int i = 0; i < students.length; i++) {
+			students[i] = new Student();
+			students[i].inputStudentInfo();
+		}
+		
+		for (int i = 0; i< students.length; i++) {
+			students[i].outputStudentInfo();
+		}
+		
 		
 	}
-
 }
+		
+//		Scanner scan = new Scanner(System.in);
+//
+//		Student[] studentInfo = new Student[5];
+//
+//		for (int i = 0; i < studentInfo.length; i++) {
+//			studentInfo[i] = new Student();
+//			System.out.println("학생명을입력해주세요 : ");
+//			studentInfo[i].name = scan.next();
+//			System.out.println("학생의나이를입력해주세요 : ");
+//			studentInfo[i].age = scan.nextInt();
+//			System.out.println("학생의 성적정보를 입력하시겠습니까? (y/n)");
+//			if (scan.next().toLowerCase().equals("y")) {
+//				System.out.println("국어점수 : ");
+//				studentInfo[i].score.kor = scan.nextInt();
+//				System.out.println("영어점수 : ");
+//				studentInfo[i].score.eng = scan.nextInt();
+//				System.out.println("수학점수 : ");
+//				studentInfo[i].score.math = scan.nextInt();
+//				System.out.println(studentInfo[i].name + " 학생의 성적 입력 완료!");
+//			} else {
+//				System.out.println(studentInfo[i].name + " 학생의 성적을 입력하지 않습니다.");
+//				studentInfo[i].score = null;
+//			}
+//		}
+//		for (int i = 0; i < studentInfo.length; i++) {
+//			if (studentInfo[i].score == null) {
+//				System.out.println(studentInfo[i].name + " 학생의 성적정보가 없습니다.");
+//			} else {
+//				System.out.println(studentInfo[i].name + " 학생의 성적정보가 있습니다. 출력하시겠습니까??? (y/n)");
+//				if (scan.next().toLowerCase().equals("y")) {
+//					studentInfo[i].showStudentInfo();
+//				} else {
+//					System.out.println(studentInfo[i].name + " 학생의 성적정보를 출력하지 않습니다.");
+//				}
+//			}
+//		}
+
+//			Student[] studentInfo = new Student[5];
+
+//			Scanner scan = new Scanner(System.in);
+//			
+//			System.out.println("학생명을입력해주세요 : ");
+//			name = scan.next();
+//			System.out.println("학생의나이를입력해주세요 : ");
+//			age = scan.nextInt();
+//			System.out.println("학생의 성적정보를 입력하시겠습니까? (y/n)");
+//			protocol = scan.next();
+//			if(protocol.equals("Y")||protocol.equals("y")) {
+//				System.out.println("국어점수 : ");
+//				score.kor = scan.nextInt();
+//				System.out.println("영어점수 : ");
+//				score.eng = scan.nextInt();
+//				System.out.println("수학점수 : ");
+//				score.math = scan.nextInt();
+//			}
+//		}

@@ -17,6 +17,7 @@ public class Score {
 	}
 	
 	
+	
 	public void showScore() {
 		System.out.println("국어:" + kor + "," + "영어:" + eng + "," + "수학:" + math + "," + "평균:"
 				+ avgScore());

@@ -14,7 +14,6 @@
 
 package kr.co.tj3;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Student {
@@ -23,39 +22,62 @@ public class Student {
 	public int age;
 	public double avg;
 	public String protocol;
-	
+
 	public Student() {
-		
+
 	}
 
 	public Student(String name, int age) {
 		this.name = name;
 		this.age = age;
 	}
-	
+
 	public void inputStudentInfo() {
-		ArrayList<Student> studentInfo = new ArrayList<Student>();
+
 		Scanner scan = new Scanner(System.in);
+
 		System.out.println("학생명을입력해주세요 : ");
 		name = scan.next();
 		System.out.println("학생의나이를입력해주세요 : ");
 		age = scan.nextInt();
 		System.out.println("학생의 성적정보를 입력하시겠습니까? (y/n)");
 		protocol = scan.next();
-		if(protocol.equals("Y")||protocol.equals("y")) {
+		if (protocol.equals("Y") || protocol.equals("y")) {
 			System.out.println("국어점수 : ");
 			score.kor = scan.nextInt();
 			System.out.println("영어점수 : ");
 			score.eng = scan.nextInt();
 			System.out.println("수학점수 : ");
 			score.math = scan.nextInt();
+		}else {
+			score = null;
 		}
-		
+	}
+
+	public void outputStudentInfo() {
+		Scanner scan = new Scanner(System.in);
+
+		if (score == null) {
+			System.out.println(name + " 학생의 성적정보가 없습니다.");
+		} else {
+			System.out.println(name + " 학생의 성적정보가 있습니다. 출력하시겠습니까??? (y/n)");
+			if (scan.next().toLowerCase().equals("y")) {
+				showStudentInfo();
+			} else {
+				System.out.println(name + " 학생의 성적정보를 출력하지 않습니다.");
+			}
+		}
+
 	}
 
 	public void showStudentInfo() {
 		System.out.println(name + ":" + age);
 		score.showScore();
+	}
+
+	public void startApp() {
+		inputStudentInfo();
+		outputStudentInfo();
 	}
 
 }

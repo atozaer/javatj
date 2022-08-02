@@ -1,0 +1,34 @@
+select * from user_tables
+
+create table test(
+	a number,
+	b number default 1.2
+);
+
+insert into test values(1.234,5678);
+insert into test(a) values(321);
+select * from test
+drop table test;
+select * from user_tables;
+
+drop table member;
+create table member(
+	id varchar(15) primary key,
+	name varchar(15) not null,
+	point int default 0
+);
+
+select id,name,point from member;
+insert into member(id,name) values('tj01','더좋은');
+insert into member values('timo','티모',200)
+drop table product;
+create table product(
+	id int primary key,
+	name varchar(50) not null,
+	price int,
+	cnt int default 0
+);
+select id,name,price,cnt from PRODUCT;
+insert into product values(1001,'운동화',59000,10);
+insert into PRODUCT values(1002,'가방',123000,1);
+insert into PRODUCT values(1003,'목도리',34000,2);
