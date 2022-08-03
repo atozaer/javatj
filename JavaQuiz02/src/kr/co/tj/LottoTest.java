@@ -4,33 +4,32 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 class Lotto {
-	HashSet lotto = new HashSet();
+	HashSet lottoNumber = new HashSet();
 	Scanner scan = new Scanner(System.in);
-	
+
 	public void lottoMain() {
-		while(true) {
+		while (true) {
 			System.out.println("로또 번호를 받으시겠습니까? (Y/N)");
-			if(scan.next().toUpperCase().equals("Y")) {
+			if (scan.next().toUpperCase().equals("Y")) {
 				lottoRun();
 				lottoShow();
 				System.out.println("Y");
-			}else {
+			} else {
 				System.out.println("로또 번호를 받지않습니다.");
 				break;
 			}
 		}
-		
-		
+
 	}
-	
+
 	public void lottoRun() {
-		for(int i = 1; i<=45; i++) {
-			
+		for (int i = 0; i < 6; i++) {
+			lottoNumber.add((int)Math.random());
 		}
 	}
-	
+
 	public void lottoShow() {
-		
+
 	}
 }
 
