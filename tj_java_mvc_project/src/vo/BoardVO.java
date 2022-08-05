@@ -13,6 +13,16 @@ public class BoardVO {
 	private String content;
 	private int readCount;
 	private Date regDate;
+	/*
+	 create table board (
+	 	board_no int auto_increment primary key,
+	 	writer varchar(20),
+	 	title varchar(100),
+	 	content text,
+	 	read_count int not null default 0,
+	 	reg_date datetime not null default now()
+	 );
+	 */
 	
 	public Long getBoardNo() {
 		return boardNo;

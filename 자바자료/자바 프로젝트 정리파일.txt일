@@ -1,0 +1,71 @@
+View(ab)	menuSelector() :abstract void
+			menuReSelector() :abstract void
+			showListHeader() :void
+			showListFooter() :void
+			showSearchMessage(String msg) :void
+			getSearchStringMessage(String msg) :String
+			getSearchIntMessage(String msg) :int
+
+			MemberView	menuSelector():OR(View)
+						menuReSelector():OR(View)
+						search() :int
+						searchResult(List<MemberVO> memberList) :void
+						list(List<MemberVO> memberList) :void
+						joinIdInput() :String
+						join(int result, String id) :MemberVO
+						joinResult(String msg) :void
+						login() :List<String>
+						loginFail() :void
+						hackCheck() :String
+						hackResult(String msg) :void
+						passwordCheck() :String
+						modify() :MemberVO
+						modifyResult(String msg) :void
+
+Controller		selectMenu() :abstract void
+				loginCheck(boolean loginFlag) :boolean
+				showListHeader() :void
+				showListFooter() :void
+				showSearchMessage(String msg) :void
+				getSearchStringMessage(String msg) :String
+				getSearchIntMessage(String msg) :int
+				run() :final void
+				
+				MemberController	selectMenu() :void (abstract)
+									
+AbstractRepository		AbstractRepository(Class<T> vo)
+						save(T vo) :int
+						update(T vo) :int
+						deleteById(int no) :int
+						selectFindById(int no) :List<T>
+						selectAll() :List<T>
+						deleteByQuery(String query) :int
+						insertByQuery(String query) :int
+						updateByQuery(String query) :int
+						selectByQuery(String query) :List<T>
+						getValue(String fieldName, T vo) :Object
+						setValue(ResultSet rs) :T
+						setOneValues(Map<String, Object> data) :Map<String, String>
+						setTwoValues(Map<String, Object> data) :String
+						convertCamelToSnake(String str) :static String
+						convertSnakeToCamel(String str) :static String
+						
+						MemberRepository	MemberRepository()
+											selectByMemberId(String memberId) :int
+											loginMember(String loginId, String loginPwd) :MemberVO
+											deleteMember(Long memberNo, String deletePwd) :int
+											selectModifyMember(Long memberNo, String selectPwd) :int
+
+전체메뉴
+(I) 로그인 (C) 회원가입 (R) 회원검색 (U) 회원수정 (D) 회원탈퇴 (L) 회원리스트 (F) 비밀번호찾기 (S) 회원정보 (O) 로그아웃 (E) 회원메뉴종료
+
+로그인 전
+(R) 회원검색 (L) 회원리스트 (C) 회원가입 (F) 비밀번호찾기 (I) 로그인(E) 회원메뉴종료
+
+로그인 후
+(R) 회원검색 (L) 회원리스트 (S) 회원정보 (D) 회원탈퇴 (O) 로그아웃 (E) 회원메뉴종료
+
+
+
+  
+
