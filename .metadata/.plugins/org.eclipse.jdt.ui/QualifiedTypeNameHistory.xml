@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxDatatypes.Array"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -42,16 +39,12 @@
     <fullyQualifiedTypeName name="kr.co.tj1.Car"/>
     <fullyQualifiedTypeName name="kr.co.tj1.SportCar"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="kr.co.tj.Banana"/>
     <fullyQualifiedTypeName name="kr.co.tj.Orange"/>
     <fullyQualifiedTypeName name="kr.co.tj.Fruit"/>
     <fullyQualifiedTypeName name="kr.co.tj.Box"/>
     <fullyQualifiedTypeName name="kr.co.tj.Apple"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="controller.MainController"/>
-    <fullyQualifiedTypeName name="repository.AbstractRepository"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="vo.NoticeVO"/>
     <fullyQualifiedTypeName name="controller.NoticeController"/>
     <fullyQualifiedTypeName name="view.NoticeView"/>
@@ -59,5 +52,12 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.tj.Student"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="repository.AbstractRepository"/>
+    <fullyQualifiedTypeName name="vo.MemberVO"/>
+    <fullyQualifiedTypeName name="controller.MemberController"/>
+    <fullyQualifiedTypeName name="repository.MemberRepository"/>
     <fullyQualifiedTypeName name="controller.Controller"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="controller.MainController"/>
 </qualifiedTypeNameHistroy>
