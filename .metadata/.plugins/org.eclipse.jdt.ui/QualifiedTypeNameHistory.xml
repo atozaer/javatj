@@ -53,11 +53,11 @@
     <fullyQualifiedTypeName name="kr.co.tj.Student"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="repository.AbstractRepository"/>
-    <fullyQualifiedTypeName name="vo.MemberVO"/>
     <fullyQualifiedTypeName name="controller.MemberController"/>
-    <fullyQualifiedTypeName name="repository.MemberRepository"/>
-    <fullyQualifiedTypeName name="controller.Controller"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="vo.MemberVO"/>
+    <fullyQualifiedTypeName name="repository.MemberRepository"/>
     <fullyQualifiedTypeName name="controller.MainController"/>
+    <fullyQualifiedTypeName name="controller.Controller"/>
 </qualifiedTypeNameHistroy>

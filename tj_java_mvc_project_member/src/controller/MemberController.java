@@ -24,42 +24,50 @@ public class MemberController extends Controller {
 	void selectMenu() {
 		controllerResult = true; // 컨트롤러 흐름제어 flag 해당 메뉴 종료시만 false 대입 Controller.run() 메소드 내 흐름 종료
 		memberList = null; // 리스트 형태 데이터 객체
-		MemberVO board = null; // 단일 형태 데이터 객체
-		int searchNo = 0;
+		MemberVO member = null; // 단일 형태 데이터 객체
+
+		controllerResult = false;
 
 		memberView.menuSelector();
+		
 		switch (memberView.menuCode) {
-		case "m": // 회원메뉴
-			break;
-		case "i": // 로그인
-			break;
-		case "l": // 회원리스트
-			break;
-		case "r": // 회원검색
-			break;
 		case "c": // 회원가입
+			
+			memberView.join();
+			memberRepository.save(member);
 			break;
-		case "f": // 아이디찾기
+		
+		case "i":  //로그인
+			String[] loginInfo = new String[2]; 
+			loginInfo = memberView.loginInfoGet();
+			MemberVO loginMember = memberRepository.loginMember(loginInfo[0],loginInfo[1]);
+			Controller.sessionNo = loginMember.getMemberNo();
+			Controller.sessionName = loginMember.getMemberName();
+			
+			if(!loginCheck(false)) {
+				
+			}else {
+				
+			}
 			break;
-		case "s": // 비밀번호찾기
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		case "e":
+			controllerResult = false;
 			break;
-		case "o": // 로그아웃
-			break;
-		case "p": // 회원정보
-			break;
-		case "d": // 회원탈퇴
-			break;
-		case "e": // 회원메뉴종료
-			break;
-
 		default:
 			memberView.menuReSelector();
 			break;
-
+			
 		}
-
 	}
-
 }
 
 //관리자메뉴

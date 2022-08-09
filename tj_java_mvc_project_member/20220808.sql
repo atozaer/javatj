@@ -26,11 +26,10 @@ create table member
     tel         varchar(13)                        null comment '연락처',
     reg_date    datetime default CURRENT_TIMESTAMP not null,
     member_name varchar(50)                        null comment '회원명',
-    member_point int default 0 							comment '적립금',
-    member_grade varchar(20) default 'BRONZE'			comment '등급'
-        
+    member_point int default 0 							comment '적립금'
 )
     comment '회원관리';
+
 create table product
 (
     product_no   int auto_increment
