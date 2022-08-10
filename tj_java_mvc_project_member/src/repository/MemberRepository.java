@@ -39,5 +39,27 @@ public class MemberRepository extends AbstractRepository<MemberVO> {
 				.format("select member_no from member where member_no = %d and password = '%s'", memberNo, selectPwd));
 		return memberList.size();
 	}
+	
+	
+	
+	
+	
+	
+	
+	public List<MemberVO> selectMemberNameTel(String memberName, String tel) {
+		List<MemberVO> memberList = null;
+		memberList = selectByQuery(String.format("Select member_id,member_name,tel from member where member_name = '%s' and tel = '%s'", memberName, tel));
 
+		return memberList;
+	}
+	
+	public List<MemberVO> selectMemberIdTel(String memberId, String tel) {
+		List<MemberVO> memberList = null;
+		memberList = selectByQuery(String.format("Select member_id,password,member_name,tel from member where member_id = '%s' and tel = '%s'", memberId, tel));
+		
+		return memberList;
+	}
+	
+		
+	
 }

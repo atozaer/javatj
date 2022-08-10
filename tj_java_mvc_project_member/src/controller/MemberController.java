@@ -14,7 +14,7 @@ public class MemberController extends Controller {
 
 	public MemberController() {
 		// super 클래스쪽 인자 전달을 통한 리스트 조회에 필요한 타이틀, 내용 출력 포멧 셋
-		super("번호\t제목\t내용\t작성자\t조회수\t작성일", "%d\t%s\t%s\t%s\t%d\t%s");
+		super("회원번호\t아이디\t패스워드\t이름\t전화번호\t작성일", "%d\t%s\t%s\t%s\t%d\t%s");
 		// 레포지토리(DB 통신을 위한 객체) 셋팅
 		memberRepository = new MemberRepository();
 		memberView = new MemberView();
@@ -29,43 +29,80 @@ public class MemberController extends Controller {
 		controllerResult = false;
 
 		memberView.menuSelector();
-		
+
 		switch (memberView.menuCode) {
 		case "c": // 회원가입
-			
+
 			memberView.join();
 			memberRepository.save(member);
 			break;
-		
-		case "i":  //로그인
-			String[] loginInfo = new String[2]; 
+
+		case "i": // 로그인
+			if (!loginCheck(false))
+				break;
+
+			String[] loginInfo = new String[2];
 			loginInfo = memberView.loginInfoGet();
-			MemberVO loginMember = memberRepository.loginMember(loginInfo[0],loginInfo[1]);
-			Controller.sessionNo = loginMember.getMemberNo();
-			Controller.sessionName = loginMember.getMemberName();
-			
-			if(!loginCheck(false)) {
-				
-			}else {
-				
+			MemberVO loginMember = memberRepository.loginMember(loginInfo[0], loginInfo[1]);
+			while (true) {
+				if (loginMember == null) {
+					memberView.loginFail();
+					continue;
+				} else {
+					Controller.sessionNo = loginMember.getMemberNo();
+					Controller.sessionName = loginMember.getMemberName();
+					System.out.println("로그인성공");
+					break;
+				}
 			}
 			break;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		case "e":
+		case "f":// 아이디찾기
+			String[] searchId = memberView.searchIdInput();
+
+			memberList = memberRepository.selectMemberNameTel(searchId[0], searchId[1]);
+
+			memberView.searchIdResult(memberList);
+
+			break;
+
+		case "s":// 비밀번호찾기
+			String[] searchPassword = memberView.searchPasswordInput();
+
+			memberList = memberRepository.selectMemberIdTel(searchPassword[0], searchPassword[1]);
+
+			memberView.searchPasswordResult(memberList);
+
+			break;
+		case "o":// 로그아웃
+			if (!loginCheck(true))
+				break;
+			sessionNo = null;
+			sessionName = null;
+			System.out.println("로그아웃되었습니다.");
+			break;
+		case "p":// 회원정보
+			if (!loginCheck(true))
+				break;
+		case "l":// 회원목록
+			memberList = memberRepository.selectAll();
+			memberView.listMember(memberList);
+			break;
+		case "r":// 회원검색
+			
+			
+			break;
+			
+			
+			
+
+		case "e":// 회원메뉴종료
 			controllerResult = false;
 			break;
+
 		default:
 			memberView.menuReSelector();
 			break;
-			
+
 		}
 	}
 }

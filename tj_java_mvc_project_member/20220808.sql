@@ -1,11 +1,11 @@
 use tj01;
-
-select * from board;
 select * from member;
+select * from board;
+
 drop table member;
 drop table board;
 drop table product;
-
+Select member_id,password,member_name,tel from member where member_id = '1234' and tel = '1111';
 create table board
 (
     board_no   bigint auto_increment
@@ -39,7 +39,10 @@ create table product
     stock        int default 0 not null comment '재고량'
 );
 
-insert into member(member_id,password,tel,member_name) values ('jjj','111','1234-5678','조용운');
+insert into member(member_id,password,tel,member_name) values ('admin','1111','111-111-111','관리자');
+insert into member(member_id,password,tel,member_name) values ('aaa','111','010-1111-1111','일일일');
+insert into member(member_id,password,tel,member_name) values ('bbb','222','010-2222-2222','둘둘둘');
+
 select * from member;
 
 drop table member;
