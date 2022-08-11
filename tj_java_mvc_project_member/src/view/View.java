@@ -7,7 +7,7 @@ import controller.MainController;
 public abstract class View {
 	protected final String listTitle;
 	protected final String listString;
-	protected final String listSplit = "================================";
+	protected final String listSplit = "================================================================================================";
 	
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	

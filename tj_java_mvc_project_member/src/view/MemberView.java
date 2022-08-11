@@ -11,7 +11,7 @@ public class MemberView extends View {
 	MemberVO member;
 
 	public MemberView() {
-		super("번호\t아이디\t\t패스워드\t\t이름\t전화번호\t\t가입일", "%d\t%s\t\t%s\t\t%s\t%s\t%s");
+		super("번호\t아이디\t\t패스워드\t\t이름\t전화번호\t\t가입일\t\t\t적립금", "%d\t%s\t\t%s\t\t%s\t%s\t%s\t%d");
 	}
 
 	@Override
@@ -36,25 +36,10 @@ public class MemberView extends View {
 		System.out.println("==========회원가입==========");
 		System.out.print("아이디 : ");
 		member.setMemberId(MainController.sc.next());
-		System.out.print("이름 : ");
-		member.setMemberName(MainController.sc.next());
 		System.out.print("비밀번호 : ");
 		member.setPassword(MainController.sc.next());
-		System.out.print("연락처 : ");
-		member.setTel(MainController.sc.next());
-
-		return member;
-	}
-
-	public MemberVO joinInfoGet() {
-		member = new MemberVO();
-		System.out.println("회원 가입 정보 입력");
-		System.out.print("아이디 : ");
-		member.setMemberId(MainController.sc.next());
 		System.out.print("이름 : ");
 		member.setMemberName(MainController.sc.next());
-		System.out.print("비밀번호 : ");
-		member.setPassword(MainController.sc.next());
 		System.out.print("연락처 : ");
 		member.setTel(MainController.sc.next());
 
@@ -95,7 +80,6 @@ public class MemberView extends View {
 		} else {
 			System.out.println("검색결과가 없습니다. 다시 입력해주세요.");
 		}
-
 	}
 
 	public String resultMsg(String msg) {
@@ -126,16 +110,61 @@ public class MemberView extends View {
 	public void listMember(List<MemberVO> memberList) {
 		showListHeader();
 		for (MemberVO member : memberList) {
-			System.out.println(String.format(listString, 
-					member.getMemberNo(), 
-					member.getMemberId(),
-					member.getPassword(), 
-					member.getMemberName(), 
-					member.getTel(), 
-					member.getRegDate()));
+			System.out
+					.println(String.format(listString, member.getMemberNo(), member.getMemberId(), member.getPassword(),
+							member.getMemberName(), member.getTel(), member.getRegDate(), member.getMemberPoint()));
 		}
 		showListFooter();
 	}
+
+	public int searchNo() {
+		return getSearchIntMessage("회원 일련 번호");
+	}
+
+	public void searchMemberNo(List<MemberVO> memberList) {
+		if (memberList.size() > 0) {
+			showListHeader();
+			for (MemberVO member : memberList) {
+				System.out.println(
+						String.format(listString, member.getMemberNo(), member.getMemberId(), member.getPassword(),
+								member.getMemberName(), member.getTel(), member.getRegDate(), member.getMemberPoint()));
+			}
+			showListFooter();
+		} else {
+			System.out.println("검색결과가없습니다.");
+		}
+	}
+
+	public String passwordCheck() {
+		System.out.println("현재 로그인 계정의 비밀번호를 입력해주세요.");
+		String password = MainController.sc.next();
+		
+		return password;
+
+	}
+
+	public MemberVO modifyMember(MemberVO updateMember) {
+		
+		System.out.println("==========회원정보수정==========");
+		System.out.print("비밀번호 : ");
+		updateMember.setPassword(MainController.sc.next());
+		System.out.print("이름 : ");
+		updateMember.setMemberName(MainController.sc.next());
+		System.out.print("연락처 : ");
+		updateMember.setTel(MainController.sc.next());
+		
+		return updateMember;
+	}
+	
+	public String deleteCheck() {
+		System.out.println("탈퇴하시겠습니까??? (y/n)");
+		return MainController.sc.next();
+	}
+	
+	public void ReSelector(String check) {
+		System.out.printf("입력값을 확인해 주세요(현재 입력 코드 : %s)\n", check);
+	}
+	
 }
 
 //
@@ -147,9 +176,6 @@ public class MemberView extends View {
 //		}
 //	}
 //
-//	public int searchNo() {
-//		return getSearchIntMessage("회원 일련 번호");
-//	}
 //
 //	public String searchId() {
 //		return getSearchStringMessage("회원 아이디");

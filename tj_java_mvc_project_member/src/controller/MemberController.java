@@ -32,14 +32,23 @@ public class MemberController extends Controller {
 
 		switch (memberView.menuCode) {
 		case "c": // 회원가입
+			if (!loginCheck(false)) {
+				break;
+			}
+			member = memberView.join();
+			int joinResult = memberRepository.save(member);
 
-			memberView.join();
-			memberRepository.save(member);
+			if (joinResult > 0) {
+				System.out.println("회원가입 성공");
+			} else {
+				System.out.println("회원가입 실패");
+			}
 			break;
 
 		case "i": // 로그인
-			if (!loginCheck(false))
+			if (!loginCheck(false)) {
 				break;
+			}
 
 			String[] loginInfo = new String[2];
 			loginInfo = memberView.loginInfoGet();
@@ -57,6 +66,10 @@ public class MemberController extends Controller {
 			}
 			break;
 		case "f":// 아이디찾기
+			if (!loginCheck(false)) {
+				break;
+			}
+
 			String[] searchId = memberView.searchIdInput();
 
 			memberList = memberRepository.selectMemberNameTel(searchId[0], searchId[1]);
@@ -64,8 +77,13 @@ public class MemberController extends Controller {
 			memberView.searchIdResult(memberList);
 
 			break;
+			
 
 		case "s":// 비밀번호찾기
+			if (!loginCheck(false)) {
+				break;
+			}
+
 			String[] searchPassword = memberView.searchPasswordInput();
 
 			memberList = memberRepository.selectMemberIdTel(searchPassword[0], searchPassword[1]);
@@ -78,23 +96,67 @@ public class MemberController extends Controller {
 				break;
 			sessionNo = null;
 			sessionName = null;
-			System.out.println("로그아웃되었습니다.");
+			memberView.resultMsg("로그아웃되었습니다.");
 			break;
 		case "p":// 회원정보
 			if (!loginCheck(true))
 				break;
+
 		case "l":// 회원목록
 			memberList = memberRepository.selectAll();
 			memberView.listMember(memberList);
 			break;
 		case "r":// 회원검색
+
+			int searchMemberNo = memberView.searchNo();
+
+			memberList = memberRepository.selectFindById(searchMemberNo);
+
+			memberView.searchMemberNo(memberList);
+
+			break;
+		case "m"://회원정보 수정
+			if (!loginCheck(true))
+				break;
+			while (true) {
+				String passwordCheck = memberView.passwordCheck();
+				member = memberRepository.selectModifyMember(sessionNo, passwordCheck);
+				if (member == null) {
+					continue;
+				} else {
+					int resultNo = memberRepository.update(memberView.modifyMember(member));
+					if (resultNo > 0) {
+						memberView.resultMsg("정상적으로 정보가 수정 되었습니다.");
+					} else {
+						memberView.resultMsg("정보 수정에 실패했습니다.");
+						continue;
+					}
+					break;
+				}
+			}
+			break;
+		case "d":// 회원탈퇴
+			if (!loginCheck(true))
+				break;
+			if(memberView.deleteCheck().toLowerCase().equals("y")) {
+				String passwordCheck = memberView.passwordCheck();
+				int result = memberRepository.deleteMember(sessionNo, passwordCheck);
+				
+				if(result > 0) {
+					memberView.resultMsg("회원탈퇴완료");
+					sessionNo = null;
+					sessionName = null;
+					break;
+				}else {
+					memberView.resultMsg("비밀번호가 일치하지 않습니다. \n다시 입력해주세요.");
+				}
+			}else {
+				System.out.println("회원탈퇴취소");
+				break;
+			}
 			
 			
 			break;
-			
-			
-			
-
 		case "e":// 회원메뉴종료
 			controllerResult = false;
 			break;

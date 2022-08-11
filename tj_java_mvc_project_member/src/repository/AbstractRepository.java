@@ -59,6 +59,29 @@ public abstract class AbstractRepository<T> {
 		}
 	}
 	
+	public void setTransaction() {
+		try {
+			db.conn.setAutoCommit(false);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void transactionProcess(boolean result) {
+		try {
+			if (result) {
+				db.conn.commit();
+			}
+			else {
+				db.conn.rollback();
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	
 	/**
 	 * @param vo : VO Object
@@ -149,7 +172,13 @@ public abstract class AbstractRepository<T> {
 	 * @param no : delete target index no, VO class INDEXNAME field search no
 	 * @return int : delete result value
 	 */
-	public int deleteById(int no) {
+	public int deleteById(int no) { return deleteById((long)no); }
+	
+	/**
+	 * @param no : delete target index no, VO class INDEXNAME field search no
+	 * @return int : delete result value
+	 */
+	public int deleteById(Long no) {
 		int result = 0;
 		
 		try {
@@ -161,11 +190,19 @@ public abstract class AbstractRepository<T> {
 		return result;
 	}
 	
+	
+	
 	/**
 	 * @param select target index no, VO class INDEXNAME field search no
 	 * @return List<T> select result Object
 	 */
-	public List<T> selectFindById(int no) {
+	public List<T> selectFindById(int no) { return selectFindById((long)no); }
+	
+	/**
+	 * @param select target index no, VO class INDEXNAME field search no
+	 * @return List<T> select result Object
+	 */
+	public List<T> selectFindById(Long no) {
 		List<T> returnData = new ArrayList<>();
 		try {
 			for (int i = 0; i < fields.length; i++) {

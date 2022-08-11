@@ -33,33 +33,47 @@ public class MemberRepository extends AbstractRepository<MemberVO> {
 				String.format("delete from member where member_no = %d and password = '%s'", memberNo, deletePwd));
 	}
 
-	public int selectModifyMember(Long memberNo, String selectPwd) {
+	public MemberVO selectModifyMember(Long memberNo, String selectPwd) {
 		List<MemberVO> memberList = null;
+		MemberVO member = null;
+		
 		memberList = selectByQuery(String
-				.format("select member_no from member where member_no = %d and password = '%s'", memberNo, selectPwd));
-		return memberList.size();
+				.format("select * from member where member_no = %d and password = '%s'", memberNo, selectPwd));
+		
+		if (memberList.size() > 0) {
+			member = memberList.get(0);
+		}
+		return member;
 	}
+
 	
-	
-	
-	
-	
-	
-	
+
 	public List<MemberVO> selectMemberNameTel(String memberName, String tel) {
 		List<MemberVO> memberList = null;
-		memberList = selectByQuery(String.format("Select member_id,member_name,tel from member where member_name = '%s' and tel = '%s'", memberName, tel));
+		memberList = selectByQuery(
+				String.format("Select member_id,member_name,tel from member where member_name = '%s' and tel = '%s'",
+						memberName, tel));
+
+		return memberList;
+	}
+
+	public List<MemberVO> selectMemberIdTel(String memberId, String tel) {
+		List<MemberVO> memberList = null;
+		memberList = selectByQuery(String.format(
+				"Select member_id,password,member_name,tel from member where member_id = '%s' and tel = '%s'", memberId,
+				tel));
 
 		return memberList;
 	}
 	
-	public List<MemberVO> selectMemberIdTel(String memberId, String tel) {
+	public List<MemberVO> selectMemberByIdNo(int memberNo) {
 		List<MemberVO> memberList = null;
-		memberList = selectByQuery(String.format("Select member_id,password,member_name,tel from member where member_id = '%s' and tel = '%s'", memberId, tel));
+		memberList = selectByQuery(
+				String.format("Select member_no,member_id,member_name,tel,reg_date from member where member_no = '%d'",
+						memberNo));
+		System.out.println("Select member_no,member_id,member_name,tel,reg_date from member where member_no = '%d'");
 		
 		return memberList;
 	}
-	
-		
-	
+
 }
