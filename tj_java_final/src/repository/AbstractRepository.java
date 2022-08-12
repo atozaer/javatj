@@ -25,7 +25,7 @@ public abstract class AbstractRepository<T> {
 	protected Field[] fields;
 	private static final String toUderRegex = "([a-z])([A-Z]+)";
 	private static final String toUderReplacement = "$1_$2";
-	private final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	public static final SimpleDateFormat SDF = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	//private final String toCamelReplacement = "\U$1";
 	protected Class<T> vo;
 	protected String tableName;
@@ -393,7 +393,7 @@ public abstract class AbstractRepository<T> {
 					arrayValues.add(String.format("'%s'", data.get(key)));
 				}
 				else if (data.get(key) instanceof Date || data.get(key) instanceof LocalDateTime) {
-					arrayValues.add(String.format("'%s'", sdf.format(data.get(key))));
+					arrayValues.add(String.format("'%s'", SDF.format(data.get(key))));
 				}
 				else {
 					arrayValues.add(String.format("%s", data.get(key)));
@@ -417,7 +417,7 @@ public abstract class AbstractRepository<T> {
 					arrayValues.add(String.format("%s = '%s'", key, data.get(key)));
 				}
 				else if (data.get(key) instanceof Date || data.get(key) instanceof LocalDateTime) {
-					arrayValues.add(String.format("%s = '%s'", key, sdf.format(data.get(key))));
+					arrayValues.add(String.format("%s = '%s'", key, SDF.format(data.get(key))));
 				}
 				else {
 					arrayValues.add(String.format("%s = %s", key, data.get(key)));

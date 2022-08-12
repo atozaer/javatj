@@ -111,15 +111,14 @@ public class MemberController extends Controller {
 				while (true) {
 					
 					String modifyPass = memberView.passwordCheck();
-					int count = memberRepository.selectModifyMember(sessionNo, modifyPass);
-					if (count == 0) {
+					memberList = memberRepository.selectModifyMember(sessionNo, modifyPass);
+					if (memberList.size() == 0) {
 						continue;
 					}
 					else {
-						
 						int resultNo = 
 								memberRepository.update(
-										memberView.modify()
+										memberView.modify(memberList)
 								);
 						if (resultNo > 0) {
 							memberView.modifyResult("정상적으로 정보가 수정 되었습니다.");

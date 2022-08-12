@@ -16,13 +16,16 @@ public class MainController {
 			menu.append(", (c)장바구니");
 		}
 		else {
-			//menu.append(", (a)관리자");
+			menu.append(", (a)관리자");
 		}
-		menu.append(", (e)종료");
+		menu.append(", (그외)종료");
 		//(m)회원, (b)게시판, (p)상품 
 		System.out.println(menu);
 		
 		switch (sc.next().toLowerCase()) {
+			case "a" :
+				controller = new AdminController();
+				break;
 			case "c" :
 				controller = new CartController();
 				break;
@@ -32,9 +35,6 @@ public class MainController {
 			case "o" :
 				controller = new OrderController();
 				break;
-//			case "b" :
-//				controller = new BoardController();
-//				break;
 			case "p" :
 				controller = new ProductController();
 				break;

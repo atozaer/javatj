@@ -2,6 +2,7 @@ package view;
 
 import java.util.List;
 
+import config.Function;
 import controller.MainController;
 import controller.OrderController;
 import vo.CartVO;
@@ -162,14 +163,15 @@ public class OrderView  extends View {
 		if (order != null) {
 			System.out.println(listSplit);
 			System.out.println(
-				String.format("주문정보\n주문번호 : %d\n실결제금액 : %d\n지급 적립금 : %d\n사용 적립금 : %d\n요청사항 : %s\n주문일시 : %s\n결제 완료 여부 : %s",
+				String.format("주문정보\n주문번호 : %d\n실결제금액 : %d\n지급 적립금 : %d\n사용 적립금 : %d\n요청사항 : %s\n주문일시 : %s\n결제 완료 여부 : %s\n주문상태 : %s\n",
 					order.getOrderNo(),
 					order.getTotalPrice(),
 					order.getPaymentPoint(),
 					order.getUsePoint(),
 					order.getOrderComment(),
 					sdf.format(order.getOrderDate()),
-					(order.getCardResult() == "t") ? "결제 완료" : "결제 실패"
+					(order.getCardResult().equals("t")) ? "결제 완료" : "결제 실패",
+					Function.orderStateCode.get(order.getOrderState())
 				)
 			);
 			System.out.println(listSplit);
@@ -191,14 +193,15 @@ public class OrderView  extends View {
 		if (order != null) {
 			System.out.println(listSplit);
 			System.out.println(
-				String.format("주문정보\n주문번호 : %d\n실결제금액 : %d\n지급 적립금 : %d\n사용 적립금 : %d\n요청사항 : %s\n주문일시 : %s\n결제 완료 여부 : %s",
+				String.format("주문정보\n주문번호 : %d\n실결제금액 : %d\n지급 적립금 : %d\n사용 적립금 : %d\n요청사항 : %s\n주문일시 : %s\n결제 완료 여부 : %s\n주문상태 : %s\n",
 					order.getOrderNo(),
 					order.getTotalPrice(),
 					order.getPaymentPoint(),
 					order.getUsePoint(),
 					order.getOrderComment(),
 					sdf.format(order.getOrderDate()),
-					(order.getCardResult() == "t") ? "결제 완료" : "결제 실패"
+					(order.getCardResult().equals("t")) ? "결제 완료" : "결제 실패",
+					Function.orderStateCode.get(order.getOrderState())
 				)
 			);
 			System.out.println(listSplit);

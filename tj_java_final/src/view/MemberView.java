@@ -1,6 +1,7 @@
 package view;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import controller.Controller;
@@ -186,19 +187,25 @@ public class MemberView extends View {
 		return MainController.sc.next();
 	}
 	
-	public MemberVO modify() {
-		System.out.println("비밀번호를 입력해 주세요");
-		String updatePass = MainController.sc.next();
-		System.out.println("이름을 입력해 주세요");
-		String updateName = MainController.sc.next();
-		System.out.println("연락처를 입력해 주세요");
-		String updateTel = MainController.sc.next();
-		
-		MemberVO updateMember = new MemberVO();
-		updateMember.setMemberNo(Controller.sessionNo);
-		updateMember.setPassword(updatePass);
-		updateMember.setMemberName(updateName);
-		updateMember.setTel(updateTel);
+	public MemberVO modify(List<MemberVO> memberList) {
+		MemberVO updateMember = null;
+		if (memberList.size() > 0) {
+			admin.view.MemberView adminMemberView = new admin.view.MemberView();
+			adminMemberView.printMemberList(memberList);
+			
+			updateMember = memberList.get(0);
+			
+			System.out.println("비밀번호를 입력해 주세요(exit : 미수정)");
+			String updatePass = MainController.sc.next();
+			System.out.println("이름을 입력해 주세요(exit : 미수정)");
+			String updateName = MainController.sc.next();
+			System.out.println("연락처를 입력해 주세요(exit : 미수정)");
+			String updateTel = MainController.sc.next();
+			
+			if (!updatePass.toLowerCase().equals("exit")) updateMember.setPassword(updatePass);
+			if (!updateName.toLowerCase().equals("exit")) updateMember.setMemberName(updateName);
+			if (!updateTel.toLowerCase().equals("exit")) updateMember.setTel(updateTel);
+		}
 		
 		return updateMember;
 	}

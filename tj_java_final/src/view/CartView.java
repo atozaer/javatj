@@ -173,4 +173,8 @@ public class CartView extends View {
 			System.out.println("삭제 되지 않았습니다.");
 		}
 	}
+	
+	public void printNotDeleteTarget() {
+		System.out.println("해당 장바구니는 존재 하지 않습니다.");
+	}
 }

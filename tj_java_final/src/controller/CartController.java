@@ -67,11 +67,27 @@ public class CartController extends Controller {
 				}
 				break;
 			case "d" :
-				Long targetId = cartView.deleteCartNo();
-				cartList = cartRepository.selectFindById(targetId);
+				cartList = cartRepository.selectCartByMemberNo(Controller.sessionNo);
 				cartView.printCartList(cartList);
-				if (cartView.deleteFlag().equals("y") && cartList.size() > 0) {
-					cartView.deleteResult(cartRepository.deleteById(targetId));
+				if (cartList.size() > 0) {
+					Long targetId = cartView.deleteCartNo();
+					CartVO deleteCart = null; 
+					for (CartVO cart : cartList) {
+						if (cart.getCartNo() == targetId) {
+							deleteCart = cart;
+						}
+					}
+					
+					if (deleteCart != null) {
+						if (cartView.deleteFlag().equals("y")) {
+							cartView.deleteResult(cartRepository.deleteById(targetId));
+							break;
+						}
+					}
+					else {
+						cartView.printNotDeleteTarget();
+					}
+					
 				}
 				break;
 			case "e" :

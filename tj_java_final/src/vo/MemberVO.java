@@ -12,6 +12,7 @@ public class MemberVO {
     private String tel;
     private Date regDate;
     private int memberPoint;
+    private int orderCount;
 
     public int getMemberPoint() {
         return memberPoint;
@@ -68,5 +69,13 @@ public class MemberVO {
     public void setRegDate(Date regDate) {
         this.regDate = regDate;
     }
+
+	public int getOrderCount() {
+		return orderCount;
+	}
+
+	public void setOrderCount(int orderCount) {
+		this.orderCount = orderCount;
+	}
 
 }

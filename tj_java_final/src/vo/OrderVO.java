@@ -15,6 +15,7 @@ public class OrderVO {
 	private String orderComment;
 	private Date orderDate;
 	private String cardResult;
+	private String orderState;
 	
 	public Long getOrderNo() {
 		return orderNo;
@@ -75,6 +76,12 @@ public class OrderVO {
 	}
 	public void setCardResult(String cardResult) {
 		this.cardResult = cardResult;
+	}
+	public String getOrderState() {
+		return orderState;
+	}
+	public void setOrderState(String orderState) {
+		this.orderState = orderState;
 	}
 	
 	

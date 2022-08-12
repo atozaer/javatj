@@ -51,9 +51,9 @@ public class MemberRepository extends AbstractRepository<MemberVO>  {
 		return deleteByQuery(String.format("delete from member where member_no = %d and password = '%s'", memberNo, deletePwd));
 	}
 	
-	public int selectModifyMember(Long memberNo, String selectPwd) {
+	public List<MemberVO> selectModifyMember(Long memberNo, String selectPwd) {
 		List<MemberVO> memberList = null;
-		memberList = selectByQuery(String.format("select member_no from member where member_no = %d and password = '%s'", memberNo, selectPwd)); 
-		return memberList.size();
+		memberList = selectByQuery(String.format("select * from member where member_no = %d and password = '%s'", memberNo, selectPwd)); 
+		return memberList;
 	}
 }

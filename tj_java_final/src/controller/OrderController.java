@@ -135,6 +135,7 @@ public class OrderController extends Controller {
 					orderVO.setUsePoint(usePoint);
 					member.setMemberPoint(member.getMemberPoint() - usePoint);
 					member.setMemberPoint(member.getMemberPoint() + ((int)Math.round(product.getPrice() * (paymentPointPer / 100)) * stock));
+					member.setOrderCount(member.getOrderCount() + 1);
 					
 					int memberResult = memberRepository.update(member);
 					
@@ -161,6 +162,7 @@ public class OrderController extends Controller {
 				}
 				result = (cardResult == "t") ? true : false;
 				orderVO.setCardResult(cardResult);
+				orderVO.setOrderState((cardResult == "t") ? "dp" : "rc");
 				
 				AbstractRepository.transactionProcess(result);
 				
@@ -276,6 +278,7 @@ public class OrderController extends Controller {
 			
 			if (Controller.sessionNo != null) {
 				member.setMemberPoint(member.getMemberPoint() + totalPaymentPoint);
+				member.setOrderCount(member.getOrderCount() + 1);
 				int memberResult = memberRepository.update(member);
 				if (memberResult == 0) result = false;
 			}
@@ -291,6 +294,7 @@ public class OrderController extends Controller {
 			result = (cardResult == "t") ? true : false;
 			
 			orderVO.setCardResult(cardResult);
+			orderVO.setOrderState((cardResult == "t") ? "dp" : "rc");
 			orderRepository.save(orderVO);
 			
 			AbstractRepository.transactionProcess(result);
@@ -308,7 +312,7 @@ public class OrderController extends Controller {
 		boolean result = true;
 		int resultNumber = (int)(Math.random() * 10) + 1;
 		System.out.println(resultNumber);
-		if (resultNumber > 8) {
+		if (resultNumber > 7) {
 			result = false;
 		}
 		return result;
