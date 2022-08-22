@@ -1,4 +1,8 @@
 codetogether.main.view.displayed=true
+codetogether.show.editor.status.label=true
+codetogether.terminal.revealOnGuestActivity=true
+codetogether.trust.all.ssl=false
 eclipse.preferences.version=1
+offer.on.selection=true
 reported.codetogether=true
 uuid=qyt18UbCCHOiUJRblfYT7C
