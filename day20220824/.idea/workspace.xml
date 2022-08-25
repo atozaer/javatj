@@ -31,6 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.16/lib/src.zip!/java.base/java/io/Serializable.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -51,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Project.color": "513a58",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -90,6 +94,7 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="5fb6a97c-1720-4bae-930c-170dd5a78cbd" />
         <option name="HTTP_PORT" value="8088" />
+        <option name="JNDI_PORT" value="10998" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -186,6 +191,7 @@
       <updated>1661303047036</updated>
       <workItem from="1661303048214" duration="5249000" />
       <workItem from="1661309959902" duration="11616000" />
+      <workItem from="1661388002379" duration="485000" />
     </task>
     <servers />
   </component>
