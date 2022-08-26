@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2771b66b-2189-4590-aa63-0d4b89beb202" name="Changes" comment="" />
+    <list default="true" id="61b0717d-dbf5-4875-ad80-e56630437348" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +14,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -28,36 +35,50 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Dq5wt9FHsRGwXYKX5DEv06DtL1" />
+  <component name="ProjectId" id="2Ds5qSCAA3AaRjm7tYPMyunR2yf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/day20220826",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEVELOP\workspace\javatj\day20220826\src\main\webapp" />
+      <recent name="D:\DEVELOP\workspace\javatj\day20220826\src\main\webapp\images" />
+      <recent name="D:\DEVELOP\workspace\javatj\day20220826\src\main\webapp\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.65">
+    <configuration name="searchForm.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8089/day20220826/searchForm.html">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="Gradle : kr.co.tj : jdbctest-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : kr.co.tj : day20220826-1.0-SNAPSHOT.war">
           <settings>
-            <option name="CONTEXT_PATH" value="/jdbctest" />
+            <option name="CONTEXT_PATH" value="/day20220826" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="9d0531a1-9db2-4ca4-a708-73961e1a36c3" />
+        <option name="BASE_DIRECTORY_NAME" value="de6291e7-4fce-4f0a-8f7d-d1cca5cf2648" />
         <option name="HTTP_PORT" value="8089" />
-        <option name="JNDI_PORT" value="10998" />
+        <option name="JNDI_PORT" value="10997" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -65,7 +86,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53226" />
+        <option name="DEBUG_PORT" value="53072" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -130,21 +151,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : kr.co.tj : jdbctest-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : kr.co.tj : day20220826-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript 디버그.searchForm.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2771b66b-2189-4590-aa63-0d4b89beb202" name="Changes" comment="" />
-      <created>1661414020823</created>
+      <changelist id="61b0717d-dbf5-4875-ad80-e56630437348" name="Changes" comment="" />
+      <created>1661475144765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1661414020823</updated>
-      <workItem from="1661414022039" duration="5100000" />
-      <workItem from="1661475050396" duration="89000" />
+      <updated>1661475144765</updated>
+      <workItem from="1661475146635" duration="2931000" />
+      <workItem from="1661479011075" duration="5074000" />
+      <workItem from="1661492409973" duration="11656000" />
     </task>
     <servers />
   </component>
@@ -161,5 +188,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

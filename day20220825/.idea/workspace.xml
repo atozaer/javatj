@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5b6efb-ba9a-4da6-b4a5-50c67df01f09" name="Changes" comment="" />
+    <list default="true" id="bb5b6efb-ba9a-4da6-b4a5-50c67df01f09" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/day20220825/src/main/webapp",
+    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/day20220826",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -61,7 +61,7 @@
       <recent name="D:\DEVELOP\workspace\javatj\day20220825\src\main\webapp\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.65">
+  <component name="RunManager" selected="JavaScript 디버그.float.html">
     <configuration name="float.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8089/day20220825/float.html">
       <method v="2" />
     </configuration>
@@ -157,14 +157,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.float.html" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.65" />
+      <item itemvalue="JavaScript 디버그.float.html" />
+      <item itemvalue="Tomcat 서버.Tomcat 9.0.65" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.float.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -177,6 +172,7 @@
       <workItem from="1661388502729" duration="48000" />
       <workItem from="1661388594212" duration="196000" />
       <workItem from="1661388802277" duration="9601000" />
+      <workItem from="1661491922689" duration="486000" />
     </task>
     <servers />
   </component>
