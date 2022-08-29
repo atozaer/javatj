@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            color: green;
+        }
+    </style>
+    <script src="../js/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tj 더좋은</h2>
+<p>더 좋은1</p>
+<p>더 좋은2</p>
+<!-- html click 이벤트 실행시 javascript test(); 메소드를 호출 해라 -->
+<button onclick="javascript:test()">p태그를 숨겨라</button>
+<script>
+    function test() {
+        // p 태그를 요소를 선택해서 해당 요소 갯수만큼 반복을 실행 하며
+        // 각 요소 별 display 속성을 none로 설정한다.
+        for (const obj of document.getElementsByTagName("p")) obj.style.display = "none";
+    }
+</script>
+
+<h2>Tj 더좋은</h2>
+<p>더 좋은1</p>
+<p>더 좋은2</p>
+<button id="btn">p태그를 숨겨라</button>
+<script>
+    // btn이라는 아이디를 가진 요소에서 클릭이벤트가 발생 하면 해당 함수를 실행 시켜라
+    document.getElementById("btn").addEventListener("click", function () {
+        // p 태그를 요소를 선택해서 해당 요소 갯수만큼 반복을 실행 하며
+        // 각 요소 별 display 속성을 none로 설정한다.
+        for (const obj of document.getElementsByTagName("p")) obj.style.display = "none";
+    })
+</script>
+</body>
+</html>

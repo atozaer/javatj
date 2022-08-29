@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="../js/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">TJ 더좋은</p>
+    <p>TJ 더좋은</p>
+    <p>TJ 더좋은</p>
+    <script>
+        $(function (){
+            $("#p1").mouseleave(function (){
+                alert("마우스가떠나가면동작");
+                confirm("확인과취소창");
+                prompt("사용자로부터입력받음", "키보드로여기에작성");
+            });
+        });
+    </script>
+</body>
+</html>
