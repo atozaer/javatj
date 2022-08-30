@@ -1,6 +1,7 @@
-package kr.co.tj1;
+package kr.co.tj.dao;
 
-import javax.xml.transform.Result;
+import kr.co.tj.domain.EmpVO;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -173,3 +174,4 @@ public class EmpDAO {
     }
 
 }
+

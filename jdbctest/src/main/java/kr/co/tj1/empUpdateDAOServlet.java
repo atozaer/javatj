@@ -5,10 +5,9 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
-@WebServlet(name = "empSelectDAO", value = "/empSelectDAO")
-public class empSelectDAOServlet extends HttpServlet {
+@WebServlet(name = "empUpdateDAOServlet", value = "/empUpdateDAO")
+public class empUpdateDAOServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
@@ -22,16 +21,24 @@ public class empSelectDAOServlet extends HttpServlet {
 
         out.print("<html><body>");
         EmpDAO dao = new EmpDAO();
-        ArrayList<EmpVO> list = dao.select();
-        System.out.print("사원번호&nbsp;사원이름&nbsp;급여&nbsp;부서<br>");
-        for(EmpVO vo: list){
-            String emp_id = vo.getEmp_id();
-            String ename = vo.getEname();
-            int salary = vo.getSalary();
-            String depart = vo.getDepart();
+        EmpVO vo = new EmpVO();
 
-            out.print(emp_id+"&nbsp;"+ename+"&nbsp;"+salary+"&nbsp;"+depart+"<br>");
+        String ename = request.getParameter("ename");
+        String salary = request.getParameter("salary");
+        String depart = request.getParameter("depart");
+        String emp_id = request.getParameter("emp_id");
+        vo.setEname(ename);
+        vo.setSalary(Integer.parseInt(salary));
+        vo.setDepart(depart);
+        vo.setEmp_id(emp_id);
+        int cnt = dao.update(vo);
+        if(cnt==0){
+            out.print("수정실패");
+        }else {
+            out.print("수정성공");
         }
+
+
         out.print("</body></html>");
     }
 }
