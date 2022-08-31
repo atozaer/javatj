@@ -54,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/jdbctest",
+    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/front_controller",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -175,6 +175,7 @@
       <workItem from="1661752871062" duration="10693000" />
       <workItem from="1661837917313" duration="6774000" />
       <workItem from="1661850821986" duration="458000" />
+      <workItem from="1661924011582" duration="1146000" />
     </task>
     <servers />
   </component>

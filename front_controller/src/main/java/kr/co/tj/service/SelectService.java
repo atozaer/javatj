@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 
 public class SelectService {
-    public ArrayList<EmpVO> excute(HttpServletRequest request, HttpServletResponse response){
+    public ArrayList<EmpVO> execute(HttpServletRequest request, HttpServletResponse response){
         EmpDAO dao = new EmpDAO();
 
         return dao.select();

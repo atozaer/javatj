@@ -18,12 +18,7 @@ public class EmpVO {
 
     @Override
     public String toString() {
-        return "EmpVO{" +
-                "emp_id='" + emp_id + '\'' +
-                ", ename='" + ename + '\'' +
-                ", salary=" + salary +
-                ", depart='" + depart + '\'' +
-                '}';
+        return "EmpVO{" + "emp_id='" + emp_id + '\'' + ", ename='" + ename + '\'' + ", salary=" + salary + ", depart='" + depart + '\'' + '}';
     }
 
     public String getEmp_id() {
