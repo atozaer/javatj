@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p><a href="http://www.naver.com" id="tj01">네이버</a></p>
+<button>attr속성을가져올수있다.</button>
+<script>
+    $(function () {
+        $("button").on("click", function () {
+            alert("속성값:" + $("#tj01").attr("href"));
+        });
+    });
+</script>
+
+<h2><a href="http://www.naver.com" id="tj02">네이버</a></h2>
+<button id="btn">우왕</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        alert("속성값 : " + document.getElementById("tj02").getAttribute("href"));
+    });
+</script>
+</body>
+</html>

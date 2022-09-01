@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p>TJ더좋은:<input type="text" id="test" value="TJ더좋은"></p>
+  <button>박스안에글자를가져와요</button>
+  <script>
+    $(function (){
+      $("button").on("click",function (){
+        alert("박스안에값을:"+$("#test").val());
+      });
+    });
+  </script>
+</body>
+</html>

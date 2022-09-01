@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    callbackTest(true, function(msg) {
+        //msg 매게변수를 전달받아 경고창 띄움
+        alert(msg);
+    });
+
+    callbackTest(false, function(confirmMsg) {
+        // confirmMsg 매게변수룰 전달 받아 컨펌창 실행
+        // 전달 받는 매게 변수명은 상관 없이 사용할 메소드에서 원하는 매게 변수 갯수만 맞춰서 던지면 됩니다.
+        confirm(confirmMsg);
+    });
+
+    function callbackTest(flag, func) {
+        // 전달 받은 flag 정보를 활용하여
+        // 전달 받은 콜백 함수를 실행
+        if (flag) {
+            func("경고 입니다.");
+        }
+        else {
+            func("확인창 입니다.");
+        }
+    }
+</script>
+</body>
+</html>

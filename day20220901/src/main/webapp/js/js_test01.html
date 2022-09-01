@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>TJ <b>더좋은</b> 구로디지털단지</p>
+    <button id="btn1">글자를 가져오는 버튼</button>
+    <button id="btn2">태그를 가져오는 버튼</button>
+<script>
+  $(function (){
+    $("#btn1").on("click",function (){
+      alert("글자를"+$("#tj01").text());
+    });
+    $("#btn2").on("click",function (){
+      alert("태그를"+$("#tj01").html());
+    });
+  });
+</script>
+</body>
+</html>

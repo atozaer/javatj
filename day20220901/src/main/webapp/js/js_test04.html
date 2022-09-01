@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tj01">TJ더좋은 <b>구로디지털단지</b> 구로점</p>
+    <p id="tj02">TJ더좋은 <b>강남역</b> 강남점</p>
+    <button id="btn1">이전글자와/새로운글자</button>
+    <button id="btn2">이전글자와/새로운태그</button>
+</body>
+<script>
+    $(function (){
+        $("#btn1").on("click",function (){
+            $("#tj01").text(function (i,origText){
+                return "이전 텍스트:" + origText + "새로운 글자 : 안녕하세요!(index:"+i+")";
+            })
+        })
+        $("#btn2").on("click",function (){
+            $("#tj02").html(function (i,origText){
+                return "이전태그:"+origText+"새로운태그:안녕하세요! <b>대구점</b> (index:"+i+")";
+            })
+        })
+    })
+</script>
+</html>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67a0411d-88c6-45ed-a168-45ec6b1d47f8" name="Changes" comment="" />
+    <list default="true" id="825657f5-8358-4aa3-8243-5d74b57c75ac" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -37,29 +35,25 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2E6pSZlFFyLfJQoSF3l7yYyvPW9" />
+  <component name="ProjectId" id="2E9224tLCLqqSSubeJLHYHo8bpa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DEVELOP/workspace/javatj/day20220831/src/main/webapp/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/day20220901/src/main/webapp/js"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DEVELOP\workspace\javatj\day20220831\src\main\webapp\lib" />
+      <recent name="D:\DEVELOP\workspace\javatj\day20220901\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -68,14 +62,14 @@
       <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="Gradle : com.example : day20220831-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : com.example : day20220901-1.0-SNAPSHOT.war">
           <settings>
-            <option name="CONTEXT_PATH" value="/day20220831" />
+            <option name="CONTEXT_PATH" value="/Gradle___com_example___day20220901_1_0_SNAPSHOT_war" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="3acc36d2-fe3f-49d5-8577-f6048ef2c4c4" />
+        <option name="BASE_DIRECTORY_NAME" value="5fb32a9d-9258-46dc-96d3-36f205edbb1a" />
         <option name="HTTP_PORT" value="8090" />
         <option name="JNDI_PORT" value="10997" />
       </server-settings>
@@ -85,7 +79,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52429" />
+        <option name="DEBUG_PORT" value="53298" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -150,7 +144,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : com.example : day20220831-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : com.example : day20220901-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
@@ -158,14 +152,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="67a0411d-88c6-45ed-a168-45ec6b1d47f8" name="Changes" comment="" />
-      <created>1661925890528</created>
+      <changelist id="825657f5-8358-4aa3-8243-5d74b57c75ac" name="Changes" comment="" />
+      <created>1661993272074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1661925890528</updated>
-      <workItem from="1661925891867" duration="3495000" />
-      <workItem from="1661930323589" duration="6747000" />
-      <workItem from="1661993184745" duration="80000" />
+      <updated>1661993272074</updated>
+      <workItem from="1661993273648" duration="6723000" />
     </task>
     <servers />
   </component>
