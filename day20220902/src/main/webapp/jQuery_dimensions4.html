@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        #div1{
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+    <script src="js/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <br>
+    <button>css divsize 리사이즈</button>
+<script>
+    $(function (){
+        $("button").on("click",function (){
+            $("#div1").width(500).height(500);
+        });
+    });
+</script>
+</body>
+</html>

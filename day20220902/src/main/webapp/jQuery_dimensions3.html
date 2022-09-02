@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="js/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>화면가로길이 세로길이</button>
+<script>
+    $(function (){
+        $("button").on("click",function (){
+            let text = "";
+            text += "Document 가로 : "+$(document).width()+"\n";
+            text += "Document 세로 : "+$(document).height()+"\n";
+            text += "window 가로 : "+$(window).width()+"\n";
+            text += "window 세로 : "+$(window).height();
+            alert(text);
+        });
+    });
+</script>
+
+</body>
+</html>

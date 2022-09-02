@@ -12,7 +12,7 @@ public class BoardDAO {
     static final String insert = "insert into board(writer,content) values(?,?)";
     static final String update = "update board set writer=?,content=? where bid=?";
     static final String delete = "delete from board where bid=?";
-    static final String selectOne = "select bid,writer,content,regdate where bid=?";
+    static final String selectOne = "select bid,writer,content,regdate from board where bid=?";
     static final String selectAll = "select bid,writer,content,regdate from board";
 
     public boolean insert(BoardVO vo){

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        .tj01{
+            background-color: red;
+        }
+        .tj02{
+            background-color: green;
+        }
+        .tj03{
+            background-color: blue;
+        }
+    </style>
+    <script src="js/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>TJ더좋은</h2>
+<p class="tj01">TJ더좋은1</p>
+<p class="tj02">TJ더좋은2</p>
+<p class="tj03">TJ더좋은3</p>
+<button>버튼</button>
+<script>
+    $(function () {
+        $("button").click(function () {
+            alert("배경색=" + $("p").css("background-color"));
+        });
+    });
+</script>
+</body>
+</html>
