@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Title</title>
+  <meta charset="UTF-8">
 </head>
 <body>1
 <form action="controller.jsp" name="checkForm" method="post">

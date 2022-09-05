@@ -5,6 +5,7 @@
 <html>
 <head>
     <title>Title</title>
+    <meta charset="UTF-8">
 </head>
 <body>
 <script>
@@ -13,6 +14,7 @@
         location.href="controller.jsp?action=board&passwd="+passwd+"&bid="+bid;
     }
 </script>
+<yoon:login />
 <table border="1">
     <tr>
         <th>글번호</th><th>글작성자</th><th>작성일</th>
@@ -25,5 +27,6 @@
 </table>
 <hr>
 <a href="insert.jsp">글작성 페이지</a>
+
 </body>
 </html>

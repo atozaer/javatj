@@ -26,6 +26,7 @@
         //2. datas setAttribute() => [Controller]
         request.setAttribute("datas", datas);
         //3. main.jsp로 이동[VIEW]
+
         pageContext.forward("main.jsp");
     }//main끝
     else if (action.equals("board")) {//board시작

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function test() {
+        let myArray = [1, 10, 100, 1000, 10000];
+        for (let i = 0; i < myArray.length; i++) {
+            //document.write("더 좋은" + i  + "<br />");
+            // "쌍따옴표로 묶는 문자열을 변수와 함께 사용할 경우 접합연산자 + 를 사용해야함
+            // (`)키 보드 1옆의 백틱으로 묶는 경우 ${변수명} 접합 연산자를 사용하지 않고 표현이 가능 함.
+            document.write(`더 좋은${i}<br />`);
+        }
+    }
+
+    test(); // 문서 최하단부 필요한 함수를 호출하면 실행 됨.
+</script>
+</body>
+</html>

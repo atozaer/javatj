@@ -9,9 +9,10 @@
 <html>
 <head>
     <title>Title</title>
+    <meta charset="UTF-8">
 </head>
 <body>
   <h1>죄송 ㅎㅎ 관리자 문의하셈</h1>
-  <%=exception %>
+  <%=exception%>
 </body>
 </html>
