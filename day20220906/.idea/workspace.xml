@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f13d944-8d92-41fb-bc67-841e984368a8" name="Changes" comment="" />
+    <list default="true" id="f7faae13-dfc1-4522-95b8-521c8aa88cc1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -18,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,49 +39,43 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2E9eDOoD59ARTcNBJtelF0W38Vo" />
+  <component name="ProjectId" id="2EN9xj4tyfpwWOEfbM6rvxgaKS2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DEVELOP/workspace/javatj/web_project&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/day20220906/src/main/webapp",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DEVELOP\workspace\javatj\web_project\src\main\webapp\WEB-INF" />
-      <recent name="D:\DEVELOP\workspace\javatj\web_project\src\main\webapp\lib" />
+      <recent name="D:\DEVELOP\workspace\javatj\day20220906\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="Gradle : com.example : web_project-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : com.example : day20220906-1.0-SNAPSHOT.war">
           <settings>
-            <option name="CONTEXT_PATH" value="/web_project" />
+            <option name="CONTEXT_PATH" value="/day20220906" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="8847566d-7dc1-46df-8e7c-c54fa60eca07" />
+        <option name="BASE_DIRECTORY_NAME" value="3a97cd79-fc0b-4cf3-954c-21cdb47e6ccf" />
         <option name="HTTP_PORT" value="8090" />
         <option name="JNDI_PORT" value="10997" />
       </server-settings>
@@ -88,7 +85,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60497" />
+        <option name="DEBUG_PORT" value="49936" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -153,7 +150,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : com.example : web_project-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : com.example : day20220906-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
@@ -161,25 +158,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1f13d944-8d92-41fb-bc67-841e984368a8" name="Changes" comment="" />
-      <created>1662012111706</created>
+      <changelist id="f7faae13-dfc1-4522-95b8-521c8aa88cc1" name="Changes" comment="" />
+      <created>1662425427433</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1662012111706</updated>
-      <workItem from="1662012112815" duration="5625000" />
-      <workItem from="1662018655121" duration="536000" />
-      <workItem from="1662019211862" duration="1419000" />
-      <workItem from="1662020646617" duration="2662000" />
-      <workItem from="1662080010774" duration="55000" />
-      <workItem from="1662096655660" duration="13345000" />
-      <workItem from="1662338443607" duration="51000" />
-      <workItem from="1662356037385" duration="8509000" />
-      <workItem from="1662365091976" duration="207000" />
-      <workItem from="1662365314528" duration="3089000" />
-      <workItem from="1662425320243" duration="95000" />
-      <workItem from="1662446797932" duration="1639000" />
-      <workItem from="1662454078721" duration="736000" />
-      <workItem from="1662511746715" duration="1218000" />
+      <updated>1662425427433</updated>
+      <workItem from="1662425429251" duration="10266000" />
     </task>
     <servers />
   </component>
@@ -196,20 +180,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/main.jsp</url>
-          <line>1</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

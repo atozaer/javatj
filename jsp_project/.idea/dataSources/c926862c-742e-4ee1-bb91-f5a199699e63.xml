@@ -1074,97 +1074,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="302" parent="1" name="tj01">
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="303" parent="294" name="board">
+    <table id="303" parent="288" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="304" parent="294" name="emp">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="305" parent="294" name="member">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <column id="306" parent="303" name="bid">
-      <AutoIncrement>9</AutoIncrement>
-      <DataType>int|0s</DataType>
+    <column id="304" parent="303" name="userID">
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="307" parent="303" name="writer">
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="305" parent="303" name="userPassword">
+      <DataType>varchar(20)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="308" parent="303" name="content">
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="306" parent="303" name="userName">
+      <DataType>varchar(20)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="309" parent="303" name="regdate">
-      <DataType>datetime|0s</DataType>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    <column id="307" parent="303" name="userGender">
+      <DataType>varchar(20)|0s</DataType>
       <Position>4</Position>
     </column>
-    <index id="310" parent="303" name="PRIMARY">
-      <ColNames>bid</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="311" parent="303" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="312" parent="304" name="emp_id">
-      <DataType>varchar(4)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="313" parent="304" name="ename">
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="314" parent="304" name="salary">
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="315" parent="304" name="depart">
+    <column id="308" parent="303" name="userEmail">
       <DataType>varchar(50)|0s</DataType>
-      <Position>4</Position>
+      <Position>5</Position>
     </column>
-    <index id="316" parent="304" name="PRIMARY">
-      <ColNames>emp_id</ColNames>
+    <index id="309" parent="303" name="PRIMARY">
+      <ColNames>userID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="317" parent="304" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="318" parent="305" name="mid">
-      <DataType>varchar(10)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="319" parent="305" name="mpw">
-      <DataType>varchar(12)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="320" parent="305" name="mname">
-      <DataType>varchar(100)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <index id="321" parent="305" name="PRIMARY">
-      <ColNames>mid</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="322" parent="305" name="PRIMARY">
+    <key id="310" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
