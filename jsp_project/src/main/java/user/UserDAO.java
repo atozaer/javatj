@@ -13,7 +13,7 @@ public class UserDAO {
     //메소드마다 반복되는 코드를 이곳에 넣으면 코드가 간소화된다.
     public UserDAO(){
         try {
-            String dbURL = "jdbc:mysql://localhost:3306/BBS?characterEncoding=utf8";
+            String dbURL = "jdbc:mysql://localhost:3306/bbs?characterEncoding=utf8";
             String dbID = "root";
             String dbPassword = "1234";
             Class.forName("com.mysql.cj.jdbc.Driver");

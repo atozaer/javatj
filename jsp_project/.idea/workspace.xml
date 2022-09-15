@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f95c3ef-0af6-48e2-97ca-24199f969b3f" name="Changes" comment="" />
+    <list default="true" id="5f95c3ef-0af6-48e2-97ca-24199f969b3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/java/com/example/marketpractice/common/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/java/com/example/marketpractice/config/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/java/com/example/marketpractice/servlet/MainServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/java/com/example/marketpractice/servlet/account/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/java/com/example/marketpractice/vo/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/WEB-INF/views/account/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/DisplayAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/Pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/PnJValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/gmaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/jquery.prettyPhoto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/jquery.scrollUp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../market-practice/src/main/webapp/js/price-range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c926862c-742e-4ee1-bb91-f5a199699e63.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c926862c-742e-4ee1-bb91-f5a199699e63.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginAction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginAction.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +75,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/web_project",
+    "last_opened_file_path": "D:/DEVELOP/workspace/javatj/jsp_project",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -167,6 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662450316863</updated>
       <workItem from="1662450318102" duration="5425000" />
+      <workItem from="1663220278539" duration="736000" />
     </task>
     <servers />
   </component>
